@@ -1,21 +1,21 @@
 const units = {
-  chia: 1,
-  mojo: 1 / 1e12,
+  spare: 1,
+  graviton: 1 / 1e12,
   colouredcoin: 1 / 1e9,
 };
 
 const aliases = {
-  chia: ['ch', 'chia', 'Chia'],
-  mojo: ['mj', 'mojo'],
+  spare: ['ch', 'spare', 'Spare'],
+  graviton: ['mj', 'graviton'],
   colouredcoin: ['cc', 'colouredcoin'],
 };
 
 const display = {
-  chia: {
+  spare: {
     format: '{amount} CH',
     fractionDigits: 12,
   },
-  mojo: {
+  graviton: {
     format: '{amount} MJ',
     fractionDigits: 0,
   },

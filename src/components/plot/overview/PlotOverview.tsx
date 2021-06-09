@@ -1,11 +1,11 @@
-import React from 'react';
-import { Loading, Flex } from '@chia/core';
 import { Grid } from '@material-ui/core';
+import { Flex, Loading } from '@spare/core';
+import React from 'react';
+import usePlots from '../../../hooks/usePlots';
+import PlotsFailed from '../PlotsFailed';
+import PlotsNotFound from '../PlotsNotFound';
 import PlotHero from './PlotOverviewHero';
 import PlotOverviewPlots from './PlotOverviewPlots';
-import usePlots from '../../../hooks/usePlots';
-import PlotsNotFound from '../PlotsNotFound';
-import PlotsFailed from '../PlotsFailed';
 
 export default function PlotOverview() {
   const { loading, hasPlots, hasQueue } = usePlots();

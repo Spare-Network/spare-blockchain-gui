@@ -1,6 +1,6 @@
-import React, { ReactNode } from 'react';
-import { Flex } from '@chia/core';
 import { LinearProgress, Typography } from '@material-ui/core';
+import { Flex } from '@spare/core';
+import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
 const StyledIndicator = styled.div`

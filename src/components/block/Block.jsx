@@ -1,26 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import { Button, Paper, TableRow, Table, TableBody, TableCell, TableContainer } from '@material-ui/core';
-import { Alert } from '@material-ui/lab';
 import { Trans } from '@lingui/macro';
-import { useParams, useHistory } from 'react-router-dom';
+import { Button, Paper, Table, TableBody, TableCell, TableContainer, TableRow } from '@material-ui/core';
+import { Alert } from '@material-ui/lab';
+import { Card, Flex, FormatLargeNumber, Link, Loading, TooltipIcon } from '@spare/core';
+import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { Card, FormatLargeNumber, Link, Loading, TooltipIcon, Flex } from '@chia/core';
-import {
-  unix_to_short_date,
-  hex_to_array,
-  arr_to_hex,
-  sha256,
-} from '../../util/utils';
-import {
-  getBlockRecord,
-  getBlock,
-} from '../../modules/fullnodeMessages';
-import { mojo_to_chia } from '../../util/chia';
-import { calculatePoolReward, calculateBaseFarmerReward } from '../../util/blockRewards';
-import LayoutMain from '../layout/LayoutMain';
-import toBech32m from '../../util/toBech32m';
-import BlockTitle from './BlockTitle';
+import { useHistory, useParams } from 'react-router-dom';
 import useCurrencyCode from '../../hooks/useCurrencyCode';
+import {
+  getBlock, getBlockRecord
+} from '../../modules/fullnodeMessages';
+import { calculateBaseFarmerReward, calculatePoolReward } from '../../util/blockRewards';
+import { graviton_to_spare } from '../../util/spare';
+import toBech32m from '../../util/toBech32m';
+import {
+  arr_to_hex, hex_to_array, sha256, unix_to_short_date
+} from '../../util/utils';
+import LayoutMain from '../layout/LayoutMain';
+import BlockTitle from './BlockTitle';
 
 /* global BigInt */
 
@@ -168,11 +164,11 @@ export default function Block() {
     ? blockRecord.weight - prevBlockRecord.weight
     : blockRecord?.weight ?? 0;
 
-  const poolReward = mojo_to_chia(calculatePoolReward(blockRecord.height));
-  const baseFarmerReward = mojo_to_chia(calculateBaseFarmerReward(blockRecord.height));
+  const poolReward = graviton_to_spare(calculatePoolReward(blockRecord.height));
+  const baseFarmerReward = graviton_to_spare(calculateBaseFarmerReward(blockRecord.height));
 
-  const chiaFees = blockRecord.fees
-    ? mojo_to_chia(BigInt(blockRecord.fees))
+  const spareFees = blockRecord.fees
+    ? graviton_to_spare(BigInt(blockRecord.fees))
     : '';
 
   const rows = [
@@ -251,7 +247,7 @@ export default function Block() {
     {
       name: <Trans>Farmer Puzzle Hash</Trans>,
       value: (
-        <Link target="_blank" href={`https://www.chiaexplorer.com/blockchain/puzzlehash/${blockRecord.farmer_puzzle_hash}`}>
+        <Link target="_blank" href={`https://explorer.sparecoin.org/blockchain/puzzlehash/${blockRecord.farmer_puzzle_hash}`}>
           {currencyCode ? toBech32m(blockRecord.farmer_puzzle_hash, currencyCode.toLowerCase()) : ''}
         </Link>
       ),
@@ -259,7 +255,7 @@ export default function Block() {
     {
       name: <Trans>Pool Puzzle Hash</Trans>,
       value: (
-        <Link target="_blank" href={`https://www.chiaexplorer.com/blockchain/puzzlehash/${blockRecord.pool_puzzle_hash}`}>
+        <Link target="_blank" href={`https://explorer.sparecoin.org/blockchain/puzzlehash/${blockRecord.pool_puzzle_hash}`}>
           {currencyCode ? toBech32m(blockRecord.pool_puzzle_hash, currencyCode.toLowerCase()) : ''}
         </Link>
       ),
@@ -292,7 +288,7 @@ export default function Block() {
     },
     {
       name: <Trans>Fees Amount</Trans>,
-      value: chiaFees ? `${chiaFees} ${currencyCode}` : '',
+      value: spareFees ? `${spareFees} ${currencyCode}` : '',
       tooltip: (
         <Trans>
           The total transactions fees in this block. Rewarded to the farmer.
@@ -309,7 +305,7 @@ export default function Block() {
         title={(
           <BlockTitle>
             <Trans>
-              Block at height {blockRecord.height} in the Chia
+              Block at height {blockRecord.height} in the Spare
               blockchain
             </Trans>
           </BlockTitle>

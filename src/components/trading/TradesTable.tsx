@@ -1,9 +1,9 @@
-import React, { useMemo, ReactNode } from 'react';
-import { Table } from '@chia/core';
-import styled from 'styled-components';
 import { Trans } from '@lingui/macro';
 import { Box } from '@material-ui/core';
-import { mojo_to_chia_string } from '../../util/chia';
+import { Table } from '@spare/core';
+import React, { ReactNode, useMemo } from 'react';
+import styled from 'styled-components';
+import { graviton_to_spare_string } from '../../util/spare';
 
 const Amount = styled(Box)`
   white-space: normal;
@@ -48,7 +48,7 @@ export default function TradesTable(props: Props) {
       ),
       amount: (
         <Amount>
-          {mojo_to_chia_string(humanAmount)}
+          {graviton_to_spare_string(humanAmount)}
         </Amount>
       ),
     };

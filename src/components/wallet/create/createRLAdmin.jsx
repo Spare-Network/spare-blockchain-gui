@@ -1,27 +1,20 @@
-import React from 'react';
 import { Trans } from '@lingui/macro';
-import { AlertDialog } from '@chia/core';
 import {
-  Typography,
-  Button,
-  Box,
-  TextField,
-  Backdrop,
-  CircularProgress,
+  Backdrop, Box, Button, CircularProgress, TextField, Typography
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-
-import { useDispatch, useSelector } from 'react-redux';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import { AlertDialog } from '@spare/core';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import {
-  createState,
-  changeCreateWallet,
-  CREATE_RL_WALLET_OPTIONS,
+  changeCreateWallet, createState, CREATE_RL_WALLET_OPTIONS
 } from '../../../modules/createWallet';
-import { useStyles } from './WalletCreate';
-import { create_rl_admin_action } from '../../../modules/message';
-import { chia_to_mojo } from '../../../util/chia';
 import { openDialog } from '../../../modules/dialog';
+import { create_rl_admin_action } from '../../../modules/message';
+import { spare_to_graviton } from '../../../util/spare';
+import { useStyles } from './WalletCreate';
+
 
 export const customStyles = makeStyles((theme) => ({
   input: {
@@ -76,7 +69,7 @@ export const CreateRLAdminWallet = () => {
   const custom = customStyles();
   const dispatch = useDispatch();
   let interval_input = null;
-  let chiaper_input = null;
+  let spareper_input = null;
   let userpubkey_input = null;
   let amount_input = null;
   let fee_input = null;
@@ -106,10 +99,10 @@ export const CreateRLAdminWallet = () => {
       return;
     }
     if (
-      chiaper_input.value === '' ||
-      Number(chiaper_input.value) === 0 ||
-      !Number(chiaper_input.value) ||
-      isNaN(Number(chiaper_input.value))
+      spareper_input.value === '' ||
+      Number(spareper_input.value) === 0 ||
+      !Number(spareper_input.value) ||
+      isNaN(Number(spareper_input.value))
     ) {
       dispatch(
         openDialog(
@@ -166,18 +159,18 @@ export const CreateRLAdminWallet = () => {
     dispatch(createState(true, true));
     const interval = interval_input.value;
     const interval_value = Number.parseInt(Number(interval));
-    const chiaper = chia_to_mojo(chiaper_input.value);
-    const chiaper_value = Number.parseInt(Number(chiaper));
+    const spareper = spare_to_graviton(spareper_input.value);
+    const spareper_value = Number.parseInt(Number(spareper));
     const userpubkey = userpubkey_input.value;
-    const amount = chia_to_mojo(amount_input.value);
+    const amount = spare_to_graviton(amount_input.value);
     const amount_value = Number.parseInt(Number(amount));
-    // var fee = chia_to_mojo(fee_input.value);
+    // var fee = spare_to_graviton(fee_input.value);
     // TODO(lipa): send fee to server
     // const fee_value = parseInt(Number(fee));
     dispatch(
       create_rl_admin_action(
         interval_value,
-        chiaper_value,
+        spareper_value,
         userpubkey,
         amount_value,
       ),
@@ -241,7 +234,7 @@ export const CreateRLAdminWallet = () => {
               color="secondary"
               fullWidth
               inputRef={(input) => {
-                chiaper_input = input;
+                spareper_input = input;
               }}
               label={
                 <Trans>

@@ -1,9 +1,9 @@
-import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex, Indicator, StateColor, TooltipIcon } from '@chia/core';
-import type Plot from '../../types/Plot';
-import useFarmerStatus from '../../hooks/useFarmerStatus';
+import { Flex, Indicator, StateColor, TooltipIcon } from '@spare/core';
+import React from 'react';
 import FarmerStatus from '../../constants/FarmerStatus';
+import useFarmerStatus from '../../hooks/useFarmerStatus';
+import type Plot from '../../types/Plot';
 
 const Color = {
   [FarmerStatus.FARMING]: StateColor.SUCCESS,

@@ -1,35 +1,28 @@
-import React, { ReactNode } from 'react';
 import { Trans } from '@lingui/macro';
-import Grid from '@material-ui/core/Grid';
-import { AlertDialog, Flex, Card } from '@chia/core';
-import { makeStyles } from '@material-ui/core/styles';
-import { useDispatch, useSelector } from 'react-redux';
 import {
-  Tooltip,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  Box,
-  Typography,
-  Button,
-  TextField,
+  Accordion, AccordionDetails, AccordionSummary, Box, Button,
+  TextField, Tooltip, Typography
 } from '@material-ui/core';
+import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
 import {
   ExpandMore as ExpandMoreIcon,
-  Help as HelpIcon,
+  Help as HelpIcon
 } from '@material-ui/icons';
-import {
-  get_address,
-  send_transaction,
-  farm_block,
-} from '../../../modules/message';
-import { mojo_to_chia_string, chia_to_mojo } from '../../../util/chia';
-import { openDialog } from '../../../modules/dialog';
-import { get_transaction_result } from '../../../util/transaction_result';
+import { AlertDialog, Card, Flex, Loading } from '@spare/core';
+import React, { ReactNode } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import config from '../../../config/config';
-import type { RootState } from '../../../modules/rootReducer';
-import WalletHistory from '../WalletHistory';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
+import { openDialog } from '../../../modules/dialog';
+import {
+  farm_block, get_address,
+  send_transaction
+} from '../../../modules/message';
+import type { RootState } from '../../../modules/rootReducer';
+import { graviton_to_spare_string, spare_to_graviton } from '../../../util/spare';
+import { get_transaction_result } from '../../../util/transaction_result';
+import WalletHistory from '../WalletHistory';
 
 const drawerWidth = 240;
 
@@ -38,10 +31,10 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 100,
   },
   resultSuccess: {
-    color: '#3AAC59',
+    color: '#00D983',
   },
   resultFailure: {
-    color: 'red',
+    color: '#E9398D',
   },
   root: {
     display: 'flex',
@@ -213,7 +206,7 @@ function BalanceCardSubSection(props: BalanceCardSubSectionProps) {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {mojo_to_chia_string(props.balance)} {currencyCode}
+            {graviton_to_spare_string(props.balance)} {currencyCode}
           </Typography>
         </Box>
       </Box>
@@ -244,13 +237,17 @@ function BalanceCard(props: BalanceCardProps) {
   const classes = useStyles();
 
   return (
-    <Card title={<Trans>Balance</Trans>}>
+    <Card title={
+      <Typography >
+        <span style={ { color: "#E9398D", fontSize: 24, fontWeight:400, fontFamily:"Josefin" }}><Trans>Balance</Trans></span>
+      </Typography>
+    }>
       <BalanceCardSubSection
         title={<Trans>Total Balance</Trans>}
         balance={balance}
         tooltip={
           <Trans>
-            This is the total amount of chia in the blockchain at the current
+            This is the total amount of spare in the blockchain at the current
             peak sub block that is controlled by your private keys. It includes
             frozen farming rewards, but not pending incoming and outgoing
             transactions.
@@ -262,9 +259,9 @@ function BalanceCard(props: BalanceCardProps) {
         balance={balance_spendable}
         tooltip={
           <Trans>
-            This is the amount of Chia that you can currently use to make
+            This is the amount of Spare that you can currently use to make
             transactions. It does not include pending farming rewards, pending
-            incoming transactions, and Chia that you have just spent but is not
+            incoming transactions, and Spare that you have just spent but is not
             yet in the blockchain.
           </Trans>
         }
@@ -405,15 +402,15 @@ function SendCard(props: SendCardProps) {
       );
       return;
     }
-    const amount = chia_to_mojo(amount_input.value);
-    const fee = chia_to_mojo(fee_input.value);
+    const amount = spare_to_graviton(amount_input.value);
+    const fee = spare_to_graviton(fee_input.value);
 
     if (address.includes('colour')) {
       dispatch(
         openDialog(
           <AlertDialog>
             <Trans>
-              Error: Cannot send chia to coloured address. Please enter a chia
+              Error: Cannot send spare to coloured address. Please enter a spare
               address.
             </Trans>
           </AlertDialog>,
@@ -421,7 +418,7 @@ function SendCard(props: SendCardProps) {
       );
       return;
     }
-    if (address.slice(0, 12) === 'chia_addr://') {
+    if (address.slice(0, 12) === 'spare_addr://') {
       address = address.slice(12);
     }
     if (address.startsWith('0x') || address.startsWith('0X')) {
@@ -439,7 +436,11 @@ function SendCard(props: SendCardProps) {
 
   return (
     <Card
-      title={<Trans>Create Transaction</Trans>}
+      title={
+        <Typography >
+        <span style={ { color: "#E9398D", fontSize: 24, fontWeight:400, fontFamily:"Josefin" }}><Trans>Create Transaction</Trans></span>
+      </Typography>
+      }
       tooltip={(
         <Trans>
           On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute.
@@ -554,7 +555,11 @@ function AddressCard(props: AddressCardProps) {
 
   return (
     <Card 
-      title={<Trans>Receive Address</Trans>}
+      title={    
+        <Typography >
+          <span style={ { color: "#E9398D", fontSize: 24, fontWeight:400, fontFamily:"Josefin" }}><Trans>Receive Address</Trans></span>
+        </Typography>
+      }
       tooltip={(
         <Trans>
           HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key.
@@ -608,6 +613,91 @@ type StandardWalletProps = {
   wallet_id: number;
 };
 
+const StatusCell = (props) => {
+  const { item } = props;
+  const { label } = item;
+  const { value } = item;
+  const { tooltip } = item;
+  const { colour } = item;
+  return (
+    <Grid item xs={12}>
+      <Flex mb={-2} alignItems="center">
+        <Flex flexGrow={1} gap={1} alignItems="center">
+          <Typography variant="subtitle1">{label}</Typography>
+          {tooltip && (
+            <Tooltip title={tooltip}>
+              <HelpIcon style={{ color: '#c8c8c8', fontSize: 12 }} />
+            </Tooltip>
+          )}
+        </Flex>
+        <Typography variant="subtitle1">
+          <span style={colour ? { color: colour } : {}}>{value}</span>
+        </Typography>
+      </Flex>
+    </Grid>
+  );
+};
+
+const StatusCard = (props) => {
+  
+  const syncing = useSelector(
+    (state: RootState) => state.wallet_state.status.syncing,
+  );
+  const synced = useSelector(
+    (state: RootState) => state.wallet_state.status.synced,
+  );
+
+  const height = useSelector(
+    (state: RootState) => state.wallet_state.status.height,
+  );
+  const connectionCount = useSelector(
+    (state: RootState) => state.wallet_state.status.connection_count,
+  );
+
+  const statusItems = [
+    {
+      label : "Height",
+      value: height,
+      tooltip: `the node has ${height}: height`,
+      colour: "#00D983",
+    },
+    {
+      label : "Number of connections",
+      value: connectionCount,
+      tooltip: `the node has ${connectionCount} connections`,
+      colour: "#00D983",
+    },
+    {
+      label : "Status",
+      value: (
+          syncing ? "Syncing" : (synced? "Synced" : "Not synced")
+      ),
+      tooltip: `the node is ${syncing}`,
+      colour: syncing ? "#F7CA3E" : (synced? "#00D983" : "#E9398D"),
+    },
+  ]
+
+  return (
+    <Card title={
+      <Typography >
+          <span style={ { color: "#E9398D", fontSize: 24, fontWeight:400, fontFamily:"Josefin" }}><Trans>Status</Trans></span>
+      </Typography>
+    }>
+      {statusItems ? (
+        <Grid spacing={4} container>
+          {statusItems.map((item) => (
+            <StatusCell item={item} key={item.label} />
+          ))}
+        </Grid>
+      ) : (
+        <Flex justifyContent="center">
+          <Loading />
+        </Flex>
+      )}
+    </Card>
+  );
+};
+
 export default function StandardWallet(props: StandardWalletProps) {
   const id = props.wallet_id;
   const wallets = useSelector((state: RootState) => state.wallet_state.wallets);
@@ -615,6 +705,7 @@ export default function StandardWallet(props: StandardWalletProps) {
   if (wallets.length > props.wallet_id) {
     return (
       <Flex flexDirection="column" gap={3}>
+        <StatusCard wallet_id={id} />
         <BalanceCard wallet_id={id} />
         <SendCard wallet_id={id} />
         <AddressCard wallet_id={id} />

@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
 import { Trans } from '@lingui/macro';
+import { Button, Dialog, DialogContent, DialogTitle } from '@material-ui/core';
 import { Alert } from '@material-ui/lab';
-import { useDispatch } from 'react-redux';
-import { DialogActions, Flex, Form, TextField } from '@chia/core';
+import { DialogActions, Flex, Form, TextField } from '@spare/core';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Button, Dialog, DialogTitle, DialogContent } from '@material-ui/core';
+import { useDispatch } from 'react-redux';
 import { openConnection } from '../../modules/fullnodeMessages';
 
 type Props = {

@@ -12,7 +12,7 @@ const convert = (amount, from, to) => {
   return Number.parseFloat(amountInFromUnit.div(units.getUnit(to)));
 };
 
-class Chia {
+class Spare {
   constructor(value, unit) {
     this._value = value;
     this._unit = unit;
@@ -73,42 +73,42 @@ class Chia {
   }
 }
 
-export const chia_formatter = (value, unit) => new Chia(value, unit);
+export const spare_formatter = (value, unit) => new Spare(value, unit);
 
-chia_formatter.convert = convert;
-chia_formatter.setDisplay = units.setDisplay;
-chia_formatter.setUnit = units.setUnit;
-chia_formatter.getUnit = units.getUnit;
-chia_formatter.setFiat = (currency, rate, display = null) => {
+spare_formatter.convert = convert;
+spare_formatter.setDisplay = units.setDisplay;
+spare_formatter.setUnit = units.setUnit;
+spare_formatter.getUnit = units.getUnit;
+spare_formatter.setFiat = (currency, rate, display = null) => {
   units.setUnit(currency, 1 / rate, display);
 };
 
-export const mojo_to_chia = (mojo) => {
-  return chia_formatter(Number.parseInt(mojo), 'mojo').to('chia').value();
+export const graviton_to_spare = (graviton) => {
+  return spare_formatter(Number.parseInt(graviton), 'graviton').to('spare').value();
 };
 
-export const chia_to_mojo = (chia) => {
-  return chia_formatter(Number.parseFloat(Number(chia)), 'chia')
-    .to('mojo')
+export const spare_to_graviton = (spare) => {
+  return spare_formatter(Number.parseFloat(Number(spare)), 'spare')
+    .to('graviton')
     .value();
 };
 
-export const mojo_to_chia_string = (mojo) => {
-  return chia_formatter(Number(mojo), 'mojo').to('chia').toString();
+export const graviton_to_spare_string = (graviton) => {
+  return spare_formatter(Number(graviton), 'graviton').to('spare').toString();
 };
 
-export const mojo_to_colouredcoin = (mojo) => {
-  return chia_formatter(Number.parseInt(mojo), 'mojo')
+export const graviton_to_colouredcoin = (graviton) => {
+  return spare_formatter(Number.parseInt(graviton), 'graviton')
     .to('colouredcoin')
     .value();
 };
 
-export const colouredcoin_to_mojo = (colouredcoin) => {
-  return chia_formatter(Number.parseFloat(Number(colouredcoin)), 'colouredcoin')
-    .to('mojo')
+export const colouredcoin_to_graviton = (colouredcoin) => {
+  return spare_formatter(Number.parseFloat(Number(colouredcoin)), 'colouredcoin')
+    .to('graviton')
     .value();
 };
 
-export const mojo_to_colouredcoin_string = (mojo) => {
-  return chia_formatter(Number(mojo), 'mojo').to('colouredcoin').toString();
+export const graviton_to_colouredcoin_string = (graviton) => {
+  return spare_formatter(Number(graviton), 'graviton').to('colouredcoin').toString();
 };

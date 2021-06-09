@@ -18,12 +18,12 @@ function getInstallerConfig () {
     authors: 'Chia Network',
     version: process.env.CHIA_INSTALLER_VERSION,
     noMsi: true,
-    iconUrl: 'https://raw.githubusercontent.com/Chia-Network/chia-blockchain/master/electron-react/src/assets/img/chia.ico',
+    iconUrl: 'https://raw.githubusercontent.com/Spare-Network/spare-blockchain/master/electron-react/src/assets/img/spare.ico',
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
-    exe: 'Chia.exe',
+    exe: 'spare.exe',
     setupExe: 'ChiaSetup-' + process.env.CHIA_INSTALLER_VERSION + '.exe',
-    setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'chia.ico')
+    setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'spare.ico')
   })
 }

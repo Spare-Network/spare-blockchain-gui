@@ -1,7 +1,7 @@
-import React, { ReactElement, ReactNode } from 'react';
 import { Box, Container } from '@material-ui/core';
+import { Flex } from '@spare/core';
+import React, { ReactElement, ReactNode } from 'react';
 import styled from 'styled-components';
-import { Flex } from '@chia/core';
 import DashboardTitle from '../dashboard/DashboardTitle';
 
 const StyledContainer = styled(Container)`

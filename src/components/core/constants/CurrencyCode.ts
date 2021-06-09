@@ -1,6 +1,6 @@
-import Unit from './Unit';
 import { IS_MAINNET } from './constants';
+import Unit from './Unit';
 
 export default {
-  [Unit.CHIA]: IS_MAINNET ? 'XCH' : 'TXCH',
+  [Unit.SPARE]: IS_MAINNET ? 'SPARE' : 'TSPARE',
 };

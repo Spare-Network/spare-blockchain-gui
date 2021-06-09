@@ -1,26 +1,20 @@
-import { useDispatch, useSelector } from 'react-redux';
-import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { useHistory } from 'react-router';
 import {
-  Box,
-  Grid,
-  FormControl,
-  MenuItem,
+  Box, Button, FormControl, Grid, InputLabel, MenuItem,
   Select,
-  TextField,
-  Button,
-  InputLabel,
+  TextField
 } from '@material-ui/core';
-import { AlertDialog, Card, Flex } from '@chia/core';
+import { AlertDialog, Card, Flex } from '@spare/core';
 import isElectron from 'is-electron';
-import { newBuy, newSell, addTrade, resetTrades } from '../../modules/trade';
-import {
-  chia_to_mojo,
-  colouredcoin_to_mojo,
-} from '../../util/chia';
+import React, { useMemo } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useHistory } from 'react-router';
 import { openDialog } from '../../modules/dialog';
+import { addTrade, newBuy, newSell, resetTrades } from '../../modules/trade';
 import { create_trade_action } from '../../modules/trade_messages';
+import {
+  colouredcoin_to_graviton, spare_to_graviton
+} from '../../util/spare';
 import { COLOURED_COIN } from '../../util/wallet_types';
 import TradesTable from './TradesTable';
 
@@ -90,13 +84,13 @@ export default function CreateOffer() {
       );
       return;
     }
-    const mojo = wallets[wallet_id.value].type === COLOURED_COIN
-      ? colouredcoin_to_mojo(amount_input.value)
-      : chia_to_mojo(amount_input.value);
+    const graviton = wallets[wallet_id.value].type === COLOURED_COIN
+      ? colouredcoin_to_graviton(amount_input.value)
+      : spare_to_graviton(amount_input.value);
 
     const trade = buy_or_sell.value === 1
-      ? newBuy(mojo, wallet_id.value)
-      : newSell(mojo, wallet_id.value);
+      ? newBuy(graviton, wallet_id.value)
+      : newSell(graviton, wallet_id.value);
 
     dispatch(addTrade(trade));
   }

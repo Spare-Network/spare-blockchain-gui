@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from 'react';
 import { Trans } from '@lingui/macro';
-import { useForm } from 'react-hook-form';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@material-ui/core';
 import { Alert } from '@material-ui/lab';
-import styled from 'styled-components';
-import { Flex, Form, TextField, Loading } from '@chia/core';
-import { Button, Dialog, DialogActions, DialogTitle, DialogContent } from '@material-ui/core';
+import { Flex, Form, Loading, TextField } from '@spare/core';
+import React, { useEffect, useState } from 'react';
+import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
+import styled from 'styled-components';
 import { getRewardTargets, setRewardTargets } from '../../modules/farmerMessages';
-import { bech32m } from 'bech32';
 
 const StyledTextField = styled(TextField)`
   min-width: 640px;
@@ -30,7 +29,6 @@ export default function FarmManageFarmingRewards(props: Props) {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<Error | null>(null);
   const methods = useForm<FormData>({
-    mode: "onChange",
     shouldUnregister: false,
     defaultValues: {
       farmer_target: '',
@@ -38,20 +36,8 @@ export default function FarmManageFarmingRewards(props: Props) {
     },
   });
 
-  const { register , formState: { errors } } = methods;
-
   function handleClose() {
     onClose();
-  }
-
-  function checkAddress(stringToCheck: string) : boolean {
-    try {
-      bech32m.decode(stringToCheck);
-    }
-    catch(err) {
-      return false;
-    } 
-    return true;
   }
 
   async function getCurrentValues() {
@@ -120,36 +106,6 @@ export default function FarmManageFarmingRewards(props: Props) {
                 {error && (
                   <Alert severity="error">{error.message}</Alert>
                 )}
-                {errors.farmer_target && errors.farmer_target.type === "required" && (
-                  <Alert severity="error">"
-                    <Trans>
-                      Farmer Reward Address must not be empty.
-                    </Trans>
-                  </Alert>
-                )}
-                {errors.farmer_target && errors.farmer_target.type === "validate" && (
-                  <Alert severity="error">"
-                    <Trans>
-                      Farmer Reward Address is not properly formatted.
-                    </Trans>
-                  </Alert>
-                )}
-
-                {errors.pool_target && errors.pool_target.type === "required" && (
-                  <Alert severity="error">"
-                    <Trans>
-                      Pool Reward Address must not be empty.
-                    </Trans>
-                  </Alert>
-                )}
-                {errors.pool_target && errors.pool_target.type === "validate" && (
-                  <Alert severity="error">"
-                    <Trans>
-                      Pool Reward Address is not properly formatted.
-                    </Trans>
-                  </Alert>
-                )}
-
                 {showWarning && (
                   <Alert severity="warning">
                     <Trans>
@@ -161,15 +117,11 @@ export default function FarmManageFarmingRewards(props: Props) {
                   label={<Trans>Farmer Reward Address</Trans>}
                   name="farmer_target"
                   variant="filled"
-                  inputProps = { { spellCheck: false } }
-                  {...register('farmer_target', { required: true, validate: checkAddress})}
                 />
                 <StyledTextField
                   label={<Trans>Pool Reward Address</Trans>}
                   name="pool_target"
                   variant="filled"
-                  inputProps = { { spellCheck: false } }
-                  {...register('pool_target', { required: true, validate: checkAddress})}
                 />
               </>
             )}

@@ -1,16 +1,25 @@
-import React from 'react';
 import { Trans } from '@lingui/macro';
+import { Button, Card, CardContent, Grid, SvgIcon, SvgIconProps, Typography } from '@material-ui/core';
+import { Flex } from '@spare/core';
+import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Button, Divider, Grid, Typography } from '@material-ui/core';
 import styled from 'styled-components';
-import { CardHero, Link } from '@chia/core';
-import heroSrc from './images/hero.svg';
-import PlotAddDirectoryDialog from '../../plot/PlotAddDirectoryDialog';
 import useOpenDialog from '../../../hooks/useOpenDialog';
+import PlotAddDirectoryDialog from '../../plot/PlotAddDirectoryDialog';
+import { ReactComponent as FarmIconRaw } from './images/data-center.svg';
+
 
 const StyledImage = styled('img')`
   max-width: 7rem;
 `;
+
+const StyledFarmIcon = styled(FarmIconRaw)`
+  path {
+    stroke: 'white';
+  }
+`;
+
+ const FarmIcon = (props: SvgIconProps) =>  <SvgIcon 	component={StyledFarmIcon} style={{ fontSize: 120 }} viewBox="12 0 35 70" {...props} />;
 
 export default function FarmOverviewHero() {
   const history = useHistory();
@@ -26,36 +35,46 @@ export default function FarmOverviewHero() {
     ));
   }
 
+  const StyledContent = styled(CardContent)`
+    padding: ${({ theme }) => `${theme.spacing(5)}px ${theme.spacing(4)}px !important`};
+    background: transparent;
+    `;
+
+  const StyledCard = styled(Card)`
+    background: transparent;
+    box-shadow: none;
+    `;
+
   return (
-    <Grid container>
-      <Grid xs={12} md={6} lg={4} item>
-        <CardHero>
-          <StyledImage src={heroSrc} />
-          <Typography variant="body1">
-            <Trans>
-              Farmers earn block rewards and transaction fees by committing
-              spare space to the network to help secure transactions. This
-              is where your farm will be once you add a plot.{' '}
-              <Link target="_blank" href="https://github.com/Chia-Network/chia-blockchain/wiki/Network-Architecture">Learn more</Link>
-            </Trans>
-          </Typography>
-          <Button
-            onClick={handleAddPlot}
-            variant="contained"
-            color="primary"
-          >
-            <Trans>Add a Plot</Trans>
-          </Button>
+    <Grid container direction="row" justify="center" alignItems="center">
+      <Grid  md={6}  item >
+        <StyledCard>
+          <StyledContent>
+            <Flex flexDirection="column" gap={3}>
 
-          <Divider />
+            <Grid container direction="row"
+              justify="center"
+              alignItems="center">
+              <Grid  md={4}  item >
+                  <FarmIcon />
+                </Grid >
+              </Grid >
+              <Typography variant="body1">
+                <Trans>
+                  Build your own Spare farm from Chia plots and support transactions in both networks
+                </Trans>
+              </Typography>
+              <Button
+                onClick={handleAddPlotDirectory} 
+                variant="contained"
+                color="primary"
+              >
+                <Trans>Add Plot Directory</Trans>
+              </Button>
 
-          <Typography variant="body1">
-            <Trans>
-              {'Do you have existing plots on this machine? '}
-              <Link onClick={handleAddPlotDirectory} variant="body1">Add Plot Directory</Link>
-            </Trans>
-          </Typography>
-        </CardHero>
+            </Flex>
+          </StyledContent>
+        </StyledCard>
       </Grid>
     </Grid>
   );

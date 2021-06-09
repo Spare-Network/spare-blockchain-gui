@@ -1,10 +1,10 @@
-import webpack from 'webpack';
-import path from 'path';
-import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import LoadablePlugin from '@loadable/webpack-plugin';
-import TerserPlugin from 'terser-webpack-plugin';
+import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import LodashModuleReplacementPlugin from 'lodash-webpack-plugin';
+import path from 'path';
+import TerserPlugin from 'terser-webpack-plugin';
+import webpack from 'webpack';
 
 const PORT = 3000;
 const CONTEXT = __dirname;
@@ -72,8 +72,8 @@ export default {
       'node_modules',
     ],
     alias: {
-      "@chia/core": `${__dirname}/src/components/core`,
-      "@chia/icons": `${__dirname}/src/components/icons`,
+      "@spare/core": `${__dirname}/src/components/core`,
+      "@spare/icons": `${__dirname}/src/components/icons`,
       crypto: 'crypto-browserify',
       stream: 'stream-browserify',
     },

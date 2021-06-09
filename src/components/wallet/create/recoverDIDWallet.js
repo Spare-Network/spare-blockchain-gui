@@ -1,32 +1,18 @@
-import { useDispatch, useSelector } from 'react-redux';
-import React, { useMemo } from 'react';
-import { Dropzone } from '@chia/core';
 import { Trans } from '@lingui/macro';
 import {
-  CssBaseline, 
-  Container,
-  Typography,
-  Paper,
-  Grid,
-  Button,
-  Box,
-  TextField,
-  Backdrop,
-  CircularProgress,
+    Box, Button, Typography
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { Card } from '@chia/core';
-
-import {
-  createState,
-  changeCreateWallet,
-  CREATE_DID_WALLET_OPTIONS,
-} from '../../../modules/createWallet';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import { Dropzone } from '@spare/core';
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import {
+    changeCreateWallet,
+    CREATE_DID_WALLET_OPTIONS
+} from '../../../modules/createWallet';
 import { recover_did_action } from '../../../modules/message';
-import { chia_to_mojo } from '../../../util/chia';
-import { openDialog } from '../../../modules/dialog';
-import { useForm, Controller, useFieldArray } from 'react-hook-form';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {

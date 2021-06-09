@@ -1,10 +1,10 @@
-import React from 'react';
 import { Trans } from '@lingui/macro';
-import { useSelector } from 'react-redux';
 import {
-  Typography,
+    Typography
 } from '@material-ui/core';
-import { Link, Table, Card } from '@chia/core';
+import { Card, Table } from '@spare/core';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import type { RootState } from '../../modules/rootReducer';
 import type { Row } from '../core/components/Table/Table';
 
@@ -38,9 +38,9 @@ export default function FarmLatestBlockChallenges() {
   return (
     <Card
       title={(
-        <Trans>
-          Latest Block Challenges
-        </Trans>
+        <Typography gutterBottom>
+            <span style={ { color: "#E9398D", fontSize: 24, fontWeight:400, fontFamily:"Josefin" }}><Trans>Latest Block Challenges</Trans></span>
+          </Typography>
       )}
       tooltip={hasPlots ? (
         <Trans>
@@ -50,15 +50,7 @@ export default function FarmLatestBlockChallenges() {
         </Trans>
       ): undefined}
     >
-      {!hasPlots && (
-        <Typography variant="body2">
-          <Trans>
-            Below are the current block challenges. You may or may not have a
-            proof of space for these challenges. These blocks do not currently
-            contain a proof of time.
-          </Trans>
-        </Typography>
-      )}
+      
       <Table
         cols={cols}
         rows={reducedSignagePoints}
@@ -66,19 +58,6 @@ export default function FarmLatestBlockChallenges() {
         rowsPerPage={5}
         pages
       />
-      <Typography variant="caption">
-        <Trans>
-          *Want to explore Chia’s blocks further? Check out{' '}
-          <Link
-            color="primary"
-            href="https://www.chiaexplorer.com/"
-            target="_blank"
-          >
-            Chia Explorer
-          </Link>{' '}
-          built by an open source developer.
-        </Trans>
-      </Typography>
     </Card>
   );
 }

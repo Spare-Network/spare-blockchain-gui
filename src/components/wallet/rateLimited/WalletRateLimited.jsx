@@ -1,28 +1,27 @@
-import React from 'react';
+import { Trans } from '@lingui/macro';
+import { Tooltip } from '@material-ui/core';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import Box from '@material-ui/core/Box';
+import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import { useDispatch, useSelector } from 'react-redux';
-import { Trans } from '@lingui/macro';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
-import Accordion from '@material-ui/core/Accordion';
-import AccordionSummary from '@material-ui/core/AccordionSummary';
-import AccordionDetails from '@material-ui/core/AccordionDetails';
+import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { Tooltip } from '@material-ui/core';
 import HelpIcon from '@material-ui/icons/Help';
-import { AlertDialog, Card, Flex } from '@chia/core';
-import {
-  send_transaction,
-  rl_set_user_info_action,
-} from '../../../modules/message';
-import { mojo_to_chia_string, chia_to_mojo } from '../../../util/chia';
-import { get_transaction_result } from '../../../util/transaction_result';
-import { openDialog } from '../../../modules/dialog';
-import WalletHistory from '../WalletHistory';
+import { AlertDialog, Card, Flex } from '@spare/core';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
+import { openDialog } from '../../../modules/dialog';
+import {
+  rl_set_user_info_action, send_transaction
+} from '../../../modules/message';
+import { graviton_to_spare_string, spare_to_graviton } from '../../../util/spare';
+import { get_transaction_result } from '../../../util/transaction_result';
+import WalletHistory from '../WalletHistory';
 
 const drawerWidth = 240;
 
@@ -38,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#3AAC59',
   },
   resultFailure: {
-    color: 'red',
+    color: '#E9398D',
   },
   toolbar: {
     paddingRight: 24, // keep right padding when drawer closed
@@ -240,9 +239,9 @@ const IncompleteCard = (props) => {
 
   function submit() {
     const ip_val = ip_input.value;
-    const hexcheck = /[\da-f]+$/gi;
+    const hespareeck = /[\da-f]+$/gi;
 
-    if (!hexcheck.test(ip_val) || ip_val.value === '') {
+    if (!hespareeck.test(ip_val) || ip_val.value === '') {
       dispatch(openDialog('Please enter a valid info packet'));
       return;
     }
@@ -251,17 +250,17 @@ const IncompleteCard = (props) => {
     const ip_debuf = ip_unhex.toString('utf8');
     const ip_parsed = JSON.parse(ip_debuf);
     const interval_input = ip_parsed.interval;
-    const chiaper_input = ip_parsed.limit;
+    const spareper_input = ip_parsed.limit;
     const origin_input = ip_parsed.origin_string;
     const admin_pubkey_input = ip_parsed.admin_pubkey;
     const interval_value = Number.parseInt(Number(interval_input));
-    const chiaper_value = Number.parseInt(Number(chiaper_input));
+    const spareper_value = Number.parseInt(Number(spareper_input));
     const origin_parsed = JSON.parse(origin_input);
     dispatch(
       rl_set_user_info_action(
         id,
         interval_value,
-        chiaper_value,
+        spareper_value,
         origin_parsed,
         admin_pubkey_input,
       ),
@@ -413,8 +412,8 @@ const RLDetailsCard = (props) => {
             <Box flexGrow={1}>
               <Typography variant="subtitle1">
                 <Trans>
-                  Spending Limit (chia per interval):{' '}
-                  {mojo_to_chia_string(limit)}
+                  Spending Limit (spare per interval):{' '}
+                  {graviton_to_spare_string(limit)}
                 </Trans>
               </Typography>
             </Box>
@@ -464,8 +463,8 @@ const RLDetailsCard = (props) => {
             <Box flexGrow={1}>
               <Typography variant="subtitle1">
                 <Trans>
-                  Spending Limit (chia per interval):{' '}
-                  {mojo_to_chia_string(limit)}
+                  Spending Limit (spare per interval):{' '}
+                  {graviton_to_spare_string(limit)}
                 </Trans>
               </Typography>
             </Box>
@@ -532,7 +531,7 @@ const BalanceCardSubSection = (props) => {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {mojo_to_chia_string(props.balance)} {currencyCode}
+            {graviton_to_spare_string(props.balance)} {currencyCode}
           </Typography>
         </Box>
       </Box>
@@ -696,8 +695,8 @@ const SendCard = (props) => {
       );
       return;
     }
-    const amount = chia_to_mojo(amount_input.value);
-    const fee = chia_to_mojo(fee_input.value);
+    const amount = spare_to_graviton(amount_input.value);
+    const fee = spare_to_graviton(fee_input.value);
 
     if (address.startsWith('0x') || address.startsWith('0X')) {
       address = address.slice(2);

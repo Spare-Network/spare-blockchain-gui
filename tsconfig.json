@@ -8,7 +8,9 @@
       "esnext"
     ],
     "paths": {
-      "@chia/*": ["./components/*"]
+      "@spare/*": [
+        "./components/*"
+      ]
     },
     "allowJs": true,
     "skipLibCheck": true,

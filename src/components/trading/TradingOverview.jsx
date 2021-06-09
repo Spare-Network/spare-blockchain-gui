@@ -1,28 +1,21 @@
-import { useDispatch, useSelector } from 'react-redux';
-import React from 'react';
 import { Trans } from '@lingui/macro';
-import { makeStyles } from '@material-ui/core/styles';
 import {
-  Paper,
-  Button,
-  Tooltip,
-  Divider,
-  ListItem,
-  Box,
-  Typography,
+  Box, Button, Divider,
+  ListItem, Paper, Tooltip, Typography
 } from '@material-ui/core';
-import { Card, Flex } from '@chia/core';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import HelpIcon from '@material-ui/icons/Help';
-import { unix_to_short_date } from '../../util/utils';
-import { presetOverview, presentTrade } from '../../modules/trade';
-import { mojo_to_chia_string } from '../../util/chia';
+import { Card, Flex } from '@spare/core';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { presentTrade, presetOverview } from '../../modules/trade';
 import {
-  get_all_trades,
-  cancel_trade_with_spend_action,
-  cancel_trade_action,
+  cancel_trade_action, cancel_trade_with_spend_action, get_all_trades
 } from '../../modules/trade_messages';
+import { graviton_to_spare_string } from '../../util/spare';
+import { unix_to_short_date } from '../../util/utils';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -311,7 +304,7 @@ const OfferRow = (props) => {
       </Box>
       <Box flexGrow={1}>{side}</Box>
       <Box flexGrow={1} style={{ textAlign: 'right' }}>
-        {mojo_to_chia_string(amount)}
+        {graviton_to_spare_string(amount)}
       </Box>
     </Box>
   );
