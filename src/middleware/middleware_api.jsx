@@ -15,8 +15,15 @@ import {
   updateUnfinishedSubBlockHeaders
 } from '../modules/fullnodeMessages';
 import {
-  getPlotDirectories, getPlots, pingHarvester,
-  refreshPlots
+  getLatestChallenges,
+  getFarmerConnections,
+  pingFarmer,
+  getHarvesters,
+} from '../modules/farmerMessages';
+import {
+  getPlotDirectories,
+  pingHarvester,
+  refreshPlots,
 } from '../modules/harvesterMessages';
 import {
   did_get_did, did_get_recovery_list, format_message, getNetworkInfo, get_address, get_balance_for_wallet, get_colour_info,
@@ -156,7 +163,7 @@ export function refreshAllState() {
     dispatch(getFullNodeConnections());
     dispatch(getLatestChallenges());
     dispatch(getFarmerConnections());
-    dispatch(getPlots());
+    dispatch(getHarvesters());
     dispatch(getPlotDirectories());
     dispatch(get_all_trades());
   };
@@ -191,10 +198,10 @@ export const handle_message = async (store, payload, errorProcessed) => {
       store.dispatch(getLatestChallenges());
       store.dispatch(getFarmerConnections());
     } else if (payload.origin === service_harvester) {
-      // get plots is working only when harcester is connected
+      // get plots is working only when harvester is connected
       const state = store.getState();
       if (!state.farming_state.harvester?.plots) {
-        store.dispatch(getPlots());
+        store.dispatch(getHarvesters());
       }
       if (!state.farming_state.harvester?.plot_directories) {
         store.dispatch(getPlotDirectories());
@@ -267,7 +274,7 @@ export const handle_message = async (store, payload, errorProcessed) => {
   } else if (payload.command === 'delete_plot') {
     store.dispatch(refreshPlots());
   } else if (payload.command === 'refresh_plots') {
-    store.dispatch(getPlots());
+    store.dispatch(getHarvesters());
   } else if (payload.command === 'get_wallets') {
     if (payload.data.success) {
       const { wallets } = payload.data;
