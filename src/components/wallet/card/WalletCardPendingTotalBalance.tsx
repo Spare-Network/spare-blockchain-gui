@@ -2,7 +2,7 @@ import { Trans } from '@lingui/macro';
 import React from 'react';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
 import useWallet from '../../../hooks/useWallet';
-import { spare_to_graviton_string } from '../../../util/spare';
+import { graviton_to_spare_string } from '../../../util/spare';
 import FarmCard from '../../farm/card/FarmCard';
 
 type Props = {
@@ -33,7 +33,7 @@ export default function WalletCardPendingTotalBalance(props: Props) {
       }
       value={
         <>
-          {spare_to_graviton_string(value)} {currencyCode}
+          {graviton_to_spare_string(value)} {currencyCode}
         </>
       }
     />

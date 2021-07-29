@@ -116,12 +116,12 @@ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:558
 #: src/components/wallet/coloured/WalletColoured.tsx:657
-#: src/components/wallet/standard/WalletStandard.tsx:587
+#: src/components/wallet/standard/WalletStandard.tsx:613
 msgid "Address"
 msgstr "アドレス"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:700
-#: src/components/wallet/standard/WalletStandard.tsx:494
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:703
+#: src/components/wallet/standard/WalletStandard.tsx:507
 msgid "Address / Puzzle hash"
 msgstr "アドレス・パズルハッシュ値"
 
@@ -130,8 +130,8 @@ msgstr "アドレス・パズルハッシュ値"
 #: src/components/trading/TradesTable.tsx:20
 #: src/components/wallet/WalletHistory.tsx:62
 #: src/components/wallet/create/createNewColouredCoin.jsx:112
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:719
-#: src/components/wallet/standard/WalletStandard.tsx:504
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:722
+#: src/components/wallet/standard/WalletStandard.tsx:517
 msgid "Amount"
 msgstr "金額"
 
@@ -149,7 +149,7 @@ msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "本当にこの耕地を削除しますか？耕地は削除すると復元できません。"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:125
-#: src/components/wallet/standard/WalletStandard.tsx:623
+#: src/components/wallet/standard/WalletStandard.tsx:649
 msgid "Are you sure you want to delete unconfirmed transactions?"
 msgstr ""
 
@@ -383,7 +383,7 @@ msgid "Confirm Disconnect"
 msgstr "接続解除の確認"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:121
-#: src/components/wallet/standard/WalletStandard.tsx:619
+#: src/components/wallet/standard/WalletStandard.tsx:645
 msgid "Confirmation"
 msgstr ""
 
@@ -494,8 +494,8 @@ msgid "Create Trade Offer"
 msgstr "交換の注文を作成"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:539
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:683
-#: src/components/wallet/standard/WalletStandard.tsx:474
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:685
+#: src/components/wallet/standard/WalletStandard.tsx:484
 msgid "Create Transaction"
 msgstr "取引を作成"
 
@@ -598,7 +598,7 @@ msgstr "遅延時間"
 #: src/components/plotNFT/PlotNFTCard.tsx:122
 #: src/components/selectKey/SelectKey.tsx:66
 #: src/components/selectKey/SelectKey.tsx:115
-#: src/components/wallet/standard/WalletStandard.tsx:620
+#: src/components/wallet/standard/WalletStandard.tsx:646
 msgid "Delete"
 msgstr "削除"
 
@@ -608,7 +608,7 @@ msgid "Delete Plot"
 msgstr "耕地を削除"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:315
-#: src/components/wallet/standard/WalletStandard.tsx:654
+#: src/components/wallet/standard/WalletStandard.tsx:680
 msgid "Delete Unconfirmed Transactions"
 msgstr ""
 
@@ -757,7 +757,7 @@ msgstr "開けませんでした (耕地に問題あり)"
 
 #: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:607
-#: src/components/wallet/standard/WalletStandard.tsx:523
+#: src/components/wallet/standard/WalletStandard.tsx:536
 msgid "Farm"
 msgstr "農家"
 
@@ -827,8 +827,8 @@ msgstr "耕作の状態"
 #: src/components/wallet/create/createNewColouredCoin.jsx:125
 #: src/components/wallet/create/createRLAdmin.jsx:237
 #: src/components/wallet/create/createRLAdmin.jsx:265
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:732
-#: src/components/wallet/standard/WalletStandard.tsx:515
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:735
+#: src/components/wallet/standard/WalletStandard.tsx:528
 msgid "Fee"
 msgstr "手数料"
 
@@ -909,7 +909,7 @@ msgstr "新しい色を生成"
 msgid "Grid view"
 msgstr ""
 
-#: src/components/wallet/standard/WalletStandard.tsx:574
+#: src/components/wallet/standard/WalletStandard.tsx:600
 msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
 msgstr "階層的決定性鍵、または HD 鍵とは、一つの秘密鍵に無数の公開鍵 (= ウォレットの受け取りアドレス) を対応させることができる公開・秘密鍵の生成方法です。どの公開鍵への入金も、最終的には同じ秘密鍵に着金し、同じ秘密鍵で支払うことができます。"
 
@@ -1193,7 +1193,7 @@ msgstr "ネットワーク名"
 #~ msgstr "Network not launched yet, waiting for genesis challenge!"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:685
-#: src/components/wallet/standard/WalletStandard.tsx:570
+#: src/components/wallet/standard/WalletStandard.tsx:596
 msgid "New Address"
 msgstr "新規アドレス"
 
@@ -1313,7 +1313,7 @@ msgstr "注文"
 msgid "Offers Created"
 msgstr "作成した注文"
 
-#: src/components/wallet/standard/WalletStandard.tsx:476
+#: src/components/wallet/standard/WalletStandard.tsx:489
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "取引ブロックは約1分間隔で作成されます。混雑時を除き、1分以内にあなたの送金も取り込まれるはずです。"
 
@@ -1729,7 +1729,7 @@ msgid "Rate Limited User Wallet Setup"
 msgstr "レート制限付きユーザーウォレットのセットアップ"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:649
-#: src/components/wallet/standard/WalletStandard.tsx:567
+#: src/components/wallet/standard/WalletStandard.tsx:590
 msgid "Receive Address"
 msgstr "受取アドレス"
 
@@ -1870,8 +1870,8 @@ msgid "Sell"
 msgstr "売却"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:617
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:747
-#: src/components/wallet/standard/WalletStandard.tsx:533
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:750
+#: src/components/wallet/standard/WalletStandard.tsx:546
 msgid "Send"
 msgstr "送る"
 
@@ -1928,7 +1928,7 @@ msgstr "チア"
 msgid "Spare Blockchain Wiki"
 msgstr "チアブロックチェーンの Wiki"
 
-#: src/components/wallet/standard/WalletStandard.tsx:638
+#: src/components/wallet/standard/WalletStandard.tsx:664
 msgid "Spare Wallet"
 msgstr "チアウォレット"
 
@@ -2431,7 +2431,7 @@ msgid "Waiting for the transaction to be confirmed"
 msgstr ""
 
 #: src/components/pool/PoolOverview.tsx:185
-#: src/components/wallet/standard/WalletStandard.tsx:665
+#: src/components/wallet/standard/WalletStandard.tsx:691
 msgid "Wallet Status:"
 msgstr ""
 

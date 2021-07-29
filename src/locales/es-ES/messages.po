@@ -116,12 +116,12 @@ msgstr "Añade {currencyCode} del Grifo"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:558
 #: src/components/wallet/coloured/WalletColoured.tsx:657
-#: src/components/wallet/standard/WalletStandard.tsx:587
+#: src/components/wallet/standard/WalletStandard.tsx:613
 msgid "Address"
 msgstr "Dirección"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:700
-#: src/components/wallet/standard/WalletStandard.tsx:494
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:703
+#: src/components/wallet/standard/WalletStandard.tsx:507
 msgid "Address / Puzzle hash"
 msgstr "Dirección / Enigma hash"
 
@@ -130,8 +130,8 @@ msgstr "Dirección / Enigma hash"
 #: src/components/trading/TradesTable.tsx:20
 #: src/components/wallet/WalletHistory.tsx:62
 #: src/components/wallet/create/createNewColouredCoin.jsx:112
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:719
-#: src/components/wallet/standard/WalletStandard.tsx:504
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:722
+#: src/components/wallet/standard/WalletStandard.tsx:517
 msgid "Amount"
 msgstr "Cantidad"
 
@@ -149,7 +149,7 @@ msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "¿Está seguro de que desea eliminar la parcela? La parcela no se puede recuperar."
 
 #: src/components/plotNFT/PlotNFTCard.tsx:125
-#: src/components/wallet/standard/WalletStandard.tsx:623
+#: src/components/wallet/standard/WalletStandard.tsx:649
 msgid "Are you sure you want to delete unconfirmed transactions?"
 msgstr "¿Estás seguro de querer eliminar estas transacciones no confirmadas?"
 
@@ -383,7 +383,7 @@ msgid "Confirm Disconnect"
 msgstr "Confirmar Desconexión"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:121
-#: src/components/wallet/standard/WalletStandard.tsx:619
+#: src/components/wallet/standard/WalletStandard.tsx:645
 msgid "Confirmation"
 msgstr "Confirmación"
 
@@ -494,8 +494,8 @@ msgid "Create Trade Offer"
 msgstr "Crear Oferta"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:539
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:683
-#: src/components/wallet/standard/WalletStandard.tsx:474
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:685
+#: src/components/wallet/standard/WalletStandard.tsx:484
 msgid "Create Transaction"
 msgstr "Crear Transacción"
 
@@ -598,7 +598,7 @@ msgstr "Retraso"
 #: src/components/plotNFT/PlotNFTCard.tsx:122
 #: src/components/selectKey/SelectKey.tsx:66
 #: src/components/selectKey/SelectKey.tsx:115
-#: src/components/wallet/standard/WalletStandard.tsx:620
+#: src/components/wallet/standard/WalletStandard.tsx:646
 msgid "Delete"
 msgstr "Eliminar"
 
@@ -608,7 +608,7 @@ msgid "Delete Plot"
 msgstr "Borrar Parcela"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:315
-#: src/components/wallet/standard/WalletStandard.tsx:654
+#: src/components/wallet/standard/WalletStandard.tsx:680
 msgid "Delete Unconfirmed Transactions"
 msgstr "Eliminar transacciones no confirmadas"
 
@@ -757,7 +757,7 @@ msgstr "Error al abrir (parcelas inválidas)"
 
 #: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:607
-#: src/components/wallet/standard/WalletStandard.tsx:523
+#: src/components/wallet/standard/WalletStandard.tsx:536
 msgid "Farm"
 msgstr "Granja"
 
@@ -827,8 +827,8 @@ msgstr "Estado de Cultivo"
 #: src/components/wallet/create/createNewColouredCoin.jsx:125
 #: src/components/wallet/create/createRLAdmin.jsx:237
 #: src/components/wallet/create/createRLAdmin.jsx:265
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:732
-#: src/components/wallet/standard/WalletStandard.tsx:515
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:735
+#: src/components/wallet/standard/WalletStandard.tsx:528
 msgid "Fee"
 msgstr "Tarifa"
 
@@ -909,7 +909,7 @@ msgstr "Generar Nuevo Color"
 msgid "Grid view"
 msgstr "Ver en cuadrícula"
 
-#: src/components/wallet/standard/WalletStandard.tsx:574
+#: src/components/wallet/standard/WalletStandard.tsx:600
 msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
 msgstr "HD o llaves Jerárquicamente Determinísticas son un tipo de esquema de llave pública/llave privada donde una llave privada pueden tener una cantidad prácticamente infinita de llaves públicas (por ende direcciones de recepción de cartera) que en última instancia hacen referencia y pueden ser gastadas por una sola llave privada."
 
@@ -1193,7 +1193,7 @@ msgstr "Nombre de Red"
 #~ msgstr "Network not launched yet, waiting for genesis challenge!"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:685
-#: src/components/wallet/standard/WalletStandard.tsx:570
+#: src/components/wallet/standard/WalletStandard.tsx:596
 msgid "New Address"
 msgstr "Nueva dirección"
 
@@ -1313,7 +1313,7 @@ msgstr "Oferta"
 msgid "Offers Created"
 msgstr "Oferta creada"
 
-#: src/components/wallet/standard/WalletStandard.tsx:476
+#: src/components/wallet/standard/WalletStandard.tsx:489
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "Por término medio, hay un minuto entre cada bloque de transacción. A menos que haya congestión, puede esperar que su transacción sea incluida en menos de un minuto."
 
@@ -1729,7 +1729,7 @@ msgid "Rate Limited User Wallet Setup"
 msgstr "Configuración de Cartera de Usuario con Tarifa Limitada"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:649
-#: src/components/wallet/standard/WalletStandard.tsx:567
+#: src/components/wallet/standard/WalletStandard.tsx:590
 msgid "Receive Address"
 msgstr "Dirección de Recibir"
 
@@ -1870,8 +1870,8 @@ msgid "Sell"
 msgstr "Vender"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:617
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:747
-#: src/components/wallet/standard/WalletStandard.tsx:533
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:750
+#: src/components/wallet/standard/WalletStandard.tsx:546
 msgid "Send"
 msgstr "Enviar"
 
@@ -1928,7 +1928,7 @@ msgstr "Spare"
 msgid "Spare Blockchain Wiki"
 msgstr "Wiki de la Blockchain de Spare"
 
-#: src/components/wallet/standard/WalletStandard.tsx:638
+#: src/components/wallet/standard/WalletStandard.tsx:664
 msgid "Spare Wallet"
 msgstr "Cartera Spare"
 
@@ -2431,7 +2431,7 @@ msgid "Waiting for the transaction to be confirmed"
 msgstr "Esperando que la transacción sea confirmada"
 
 #: src/components/pool/PoolOverview.tsx:185
-#: src/components/wallet/standard/WalletStandard.tsx:665
+#: src/components/wallet/standard/WalletStandard.tsx:691
 msgid "Wallet Status:"
 msgstr "Estado de la cartera:"
 

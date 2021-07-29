@@ -116,12 +116,12 @@ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:558
 #: src/components/wallet/coloured/WalletColoured.tsx:657
-#: src/components/wallet/standard/WalletStandard.tsx:587
+#: src/components/wallet/standard/WalletStandard.tsx:613
 msgid "Address"
 msgstr "주소"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:700
-#: src/components/wallet/standard/WalletStandard.tsx:494
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:703
+#: src/components/wallet/standard/WalletStandard.tsx:507
 msgid "Address / Puzzle hash"
 msgstr "주소 / 퍼즐 해시"
 
@@ -130,8 +130,8 @@ msgstr "주소 / 퍼즐 해시"
 #: src/components/trading/TradesTable.tsx:20
 #: src/components/wallet/WalletHistory.tsx:62
 #: src/components/wallet/create/createNewColouredCoin.jsx:112
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:719
-#: src/components/wallet/standard/WalletStandard.tsx:504
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:722
+#: src/components/wallet/standard/WalletStandard.tsx:517
 msgid "Amount"
 msgstr "금액"
 
@@ -149,7 +149,7 @@ msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "정말로 플롯을 삭제하시겠습니까? 삭제된 플롯은 복구되지 않습니다."
 
 #: src/components/plotNFT/PlotNFTCard.tsx:125
-#: src/components/wallet/standard/WalletStandard.tsx:623
+#: src/components/wallet/standard/WalletStandard.tsx:649
 msgid "Are you sure you want to delete unconfirmed transactions?"
 msgstr ""
 
@@ -383,7 +383,7 @@ msgid "Confirm Disconnect"
 msgstr "연결 해제 확인"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:121
-#: src/components/wallet/standard/WalletStandard.tsx:619
+#: src/components/wallet/standard/WalletStandard.tsx:645
 msgid "Confirmation"
 msgstr ""
 
@@ -494,8 +494,8 @@ msgid "Create Trade Offer"
 msgstr "거래 제안 만들기"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:539
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:683
-#: src/components/wallet/standard/WalletStandard.tsx:474
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:685
+#: src/components/wallet/standard/WalletStandard.tsx:484
 msgid "Create Transaction"
 msgstr "거래 생성하기"
 
@@ -598,7 +598,7 @@ msgstr "지연"
 #: src/components/plotNFT/PlotNFTCard.tsx:122
 #: src/components/selectKey/SelectKey.tsx:66
 #: src/components/selectKey/SelectKey.tsx:115
-#: src/components/wallet/standard/WalletStandard.tsx:620
+#: src/components/wallet/standard/WalletStandard.tsx:646
 msgid "Delete"
 msgstr "삭제"
 
@@ -608,7 +608,7 @@ msgid "Delete Plot"
 msgstr "플롯 삭제"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:315
-#: src/components/wallet/standard/WalletStandard.tsx:654
+#: src/components/wallet/standard/WalletStandard.tsx:680
 msgid "Delete Unconfirmed Transactions"
 msgstr ""
 
@@ -757,7 +757,7 @@ msgstr "플롯 열기에 실패했습니다. (사유: 유효하지 않은 플롯
 
 #: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:607
-#: src/components/wallet/standard/WalletStandard.tsx:523
+#: src/components/wallet/standard/WalletStandard.tsx:536
 msgid "Farm"
 msgstr "농장"
 
@@ -827,8 +827,8 @@ msgstr "수확 상태"
 #: src/components/wallet/create/createNewColouredCoin.jsx:125
 #: src/components/wallet/create/createRLAdmin.jsx:237
 #: src/components/wallet/create/createRLAdmin.jsx:265
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:732
-#: src/components/wallet/standard/WalletStandard.tsx:515
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:735
+#: src/components/wallet/standard/WalletStandard.tsx:528
 msgid "Fee"
 msgstr "수수료"
 
@@ -909,7 +909,7 @@ msgstr "새로운 컬러 만들기"
 msgid "Grid view"
 msgstr ""
 
-#: src/components/wallet/standard/WalletStandard.tsx:574
+#: src/components/wallet/standard/WalletStandard.tsx:600
 msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
 msgstr "HD키, 또는 \"계층구조 결정성 키\" 라고 부르는 이것은 개인 키 하나에 무한대에 가까운 공개키를 가질 수 있는 공개키 암호화 방식으로, 시드를 안전하게 보관하기만 한다면 언제든 시드로부터 개인키를 순차적으로 재생성할 수 있다는 장점을 지니고 있습니다."
 
@@ -1193,7 +1193,7 @@ msgstr "네트워크 이름"
 #~ msgstr "Network not launched yet, waiting for genesis challenge!"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:685
-#: src/components/wallet/standard/WalletStandard.tsx:570
+#: src/components/wallet/standard/WalletStandard.tsx:596
 msgid "New Address"
 msgstr "새 주소"
 
@@ -1313,7 +1313,7 @@ msgstr "거래 제안"
 msgid "Offers Created"
 msgstr "거래 주문이 생성되었습니다."
 
-#: src/components/wallet/standard/WalletStandard.tsx:476
+#: src/components/wallet/standard/WalletStandard.tsx:489
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "당신이 보낸 트랜잭션(이체) 주문이 1분 이내로 처리된다고 느끼겠지만, 평균적으로는 각 트랜잭션 블록은 1분 정도의 차이를 두고 있습니다."
 
@@ -1729,7 +1729,7 @@ msgid "Rate Limited User Wallet Setup"
 msgstr "비율 제한 사용자 지갑 설정"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:649
-#: src/components/wallet/standard/WalletStandard.tsx:567
+#: src/components/wallet/standard/WalletStandard.tsx:590
 msgid "Receive Address"
 msgstr "입금 주소"
 
@@ -1870,8 +1870,8 @@ msgid "Sell"
 msgstr "판매"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:617
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:747
-#: src/components/wallet/standard/WalletStandard.tsx:533
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:750
+#: src/components/wallet/standard/WalletStandard.tsx:546
 msgid "Send"
 msgstr "전송"
 
@@ -1928,7 +1928,7 @@ msgstr "치아"
 msgid "Spare Blockchain Wiki"
 msgstr "치아 블록체인 위키"
 
-#: src/components/wallet/standard/WalletStandard.tsx:638
+#: src/components/wallet/standard/WalletStandard.tsx:664
 msgid "Spare Wallet"
 msgstr "치아 지갑"
 
@@ -2431,7 +2431,7 @@ msgid "Waiting for the transaction to be confirmed"
 msgstr ""
 
 #: src/components/pool/PoolOverview.tsx:185
-#: src/components/wallet/standard/WalletStandard.tsx:665
+#: src/components/wallet/standard/WalletStandard.tsx:691
 msgid "Wallet Status:"
 msgstr ""
 

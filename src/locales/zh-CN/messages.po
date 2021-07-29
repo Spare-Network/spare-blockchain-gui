@@ -116,12 +116,12 @@ msgstr "从水龙头获取 {currencyCode}"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:558
 #: src/components/wallet/coloured/WalletColoured.tsx:657
-#: src/components/wallet/standard/WalletStandard.tsx:587
+#: src/components/wallet/standard/WalletStandard.tsx:613
 msgid "Address"
 msgstr "地址"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:700
-#: src/components/wallet/standard/WalletStandard.tsx:494
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:703
+#: src/components/wallet/standard/WalletStandard.tsx:507
 msgid "Address / Puzzle hash"
 msgstr "地址 / 谜语哈希"
 
@@ -130,8 +130,8 @@ msgstr "地址 / 谜语哈希"
 #: src/components/trading/TradesTable.tsx:20
 #: src/components/wallet/WalletHistory.tsx:62
 #: src/components/wallet/create/createNewColouredCoin.jsx:112
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:719
-#: src/components/wallet/standard/WalletStandard.tsx:504
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:722
+#: src/components/wallet/standard/WalletStandard.tsx:517
 msgid "Amount"
 msgstr "数量"
 
@@ -149,7 +149,7 @@ msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "你确定要删除这个农田吗？删除后将不可恢复。"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:125
-#: src/components/wallet/standard/WalletStandard.tsx:623
+#: src/components/wallet/standard/WalletStandard.tsx:649
 msgid "Are you sure you want to delete unconfirmed transactions?"
 msgstr "确定要删除未确认的交易吗？"
 
@@ -383,7 +383,7 @@ msgid "Confirm Disconnect"
 msgstr "确认断开连接"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:121
-#: src/components/wallet/standard/WalletStandard.tsx:619
+#: src/components/wallet/standard/WalletStandard.tsx:645
 msgid "Confirmation"
 msgstr "确认"
 
@@ -494,8 +494,8 @@ msgid "Create Trade Offer"
 msgstr "发起交易出价"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:539
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:683
-#: src/components/wallet/standard/WalletStandard.tsx:474
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:685
+#: src/components/wallet/standard/WalletStandard.tsx:484
 msgid "Create Transaction"
 msgstr "发起交易"
 
@@ -598,7 +598,7 @@ msgstr "延迟"
 #: src/components/plotNFT/PlotNFTCard.tsx:122
 #: src/components/selectKey/SelectKey.tsx:66
 #: src/components/selectKey/SelectKey.tsx:115
-#: src/components/wallet/standard/WalletStandard.tsx:620
+#: src/components/wallet/standard/WalletStandard.tsx:646
 msgid "Delete"
 msgstr "删除"
 
@@ -608,7 +608,7 @@ msgid "Delete Plot"
 msgstr "删除农田"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:315
-#: src/components/wallet/standard/WalletStandard.tsx:654
+#: src/components/wallet/standard/WalletStandard.tsx:680
 msgid "Delete Unconfirmed Transactions"
 msgstr "删除未确认的交易"
 
@@ -757,7 +757,7 @@ msgstr "打开失败（农田无效）"
 
 #: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:607
-#: src/components/wallet/standard/WalletStandard.tsx:523
+#: src/components/wallet/standard/WalletStandard.tsx:536
 msgid "Farm"
 msgstr "农场"
 
@@ -827,8 +827,8 @@ msgstr "耕种状态"
 #: src/components/wallet/create/createNewColouredCoin.jsx:125
 #: src/components/wallet/create/createRLAdmin.jsx:237
 #: src/components/wallet/create/createRLAdmin.jsx:265
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:732
-#: src/components/wallet/standard/WalletStandard.tsx:515
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:735
+#: src/components/wallet/standard/WalletStandard.tsx:528
 msgid "Fee"
 msgstr "费用"
 
@@ -909,7 +909,7 @@ msgstr "生成新的色彩"
 msgid "Grid view"
 msgstr "网格视图"
 
-#: src/components/wallet/standard/WalletStandard.tsx:574
+#: src/components/wallet/standard/WalletStandard.tsx:600
 msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
 msgstr "分层确定性钱包中的私钥可以对应有无限多个公钥（也就是你的钱包接受地址），这所有的公钥都受这个单一的私钥控制。"
 
@@ -1193,7 +1193,7 @@ msgstr "网络名称"
 #~ msgstr "Network not launched yet, waiting for genesis challenge!"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:685
-#: src/components/wallet/standard/WalletStandard.tsx:570
+#: src/components/wallet/standard/WalletStandard.tsx:596
 msgid "New Address"
 msgstr "新地址"
 
@@ -1313,7 +1313,7 @@ msgstr "出价"
 msgid "Offers Created"
 msgstr "已创建的出价"
 
-#: src/components/wallet/standard/WalletStandard.tsx:476
+#: src/components/wallet/standard/WalletStandard.tsx:489
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "每个交易区块平均打包时间为一分钟。通常您的交易将在一分钟内被确认，除非出现拥堵。"
 
@@ -1729,7 +1729,7 @@ msgid "Rate Limited User Wallet Setup"
 msgstr "费用限定型用户钱包设置"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:649
-#: src/components/wallet/standard/WalletStandard.tsx:567
+#: src/components/wallet/standard/WalletStandard.tsx:590
 msgid "Receive Address"
 msgstr "接收地址"
 
@@ -1870,8 +1870,8 @@ msgid "Sell"
 msgstr "卖出"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:617
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:747
-#: src/components/wallet/standard/WalletStandard.tsx:533
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:750
+#: src/components/wallet/standard/WalletStandard.tsx:546
 msgid "Send"
 msgstr "发送"
 
@@ -1928,7 +1928,7 @@ msgstr "奇亚"
 msgid "Spare Blockchain Wiki"
 msgstr "奇亚区块链项目维基"
 
-#: src/components/wallet/standard/WalletStandard.tsx:638
+#: src/components/wallet/standard/WalletStandard.tsx:664
 msgid "Spare Wallet"
 msgstr "奇亚钱包"
 
@@ -2431,7 +2431,7 @@ msgid "Waiting for the transaction to be confirmed"
 msgstr "正在等待交易确认"
 
 #: src/components/pool/PoolOverview.tsx:185
-#: src/components/wallet/standard/WalletStandard.tsx:665
+#: src/components/wallet/standard/WalletStandard.tsx:691
 msgid "Wallet Status:"
 msgstr "钱包状态："
 

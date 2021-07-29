@@ -116,12 +116,12 @@ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:558
 #: src/components/wallet/coloured/WalletColoured.tsx:657
-#: src/components/wallet/standard/WalletStandard.tsx:587
+#: src/components/wallet/standard/WalletStandard.tsx:613
 msgid "Address"
 msgstr "Διεύθυνση"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:700
-#: src/components/wallet/standard/WalletStandard.tsx:494
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:703
+#: src/components/wallet/standard/WalletStandard.tsx:507
 msgid "Address / Puzzle hash"
 msgstr "Διεύθυνση / Puzzle hash"
 
@@ -130,8 +130,8 @@ msgstr "Διεύθυνση / Puzzle hash"
 #: src/components/trading/TradesTable.tsx:20
 #: src/components/wallet/WalletHistory.tsx:62
 #: src/components/wallet/create/createNewColouredCoin.jsx:112
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:719
-#: src/components/wallet/standard/WalletStandard.tsx:504
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:722
+#: src/components/wallet/standard/WalletStandard.tsx:517
 msgid "Amount"
 msgstr "Ποσό"
 
@@ -149,7 +149,7 @@ msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε αυτό το plot?? Το plot δεν μπορεί να ανακτηθεί."
 
 #: src/components/plotNFT/PlotNFTCard.tsx:125
-#: src/components/wallet/standard/WalletStandard.tsx:623
+#: src/components/wallet/standard/WalletStandard.tsx:649
 msgid "Are you sure you want to delete unconfirmed transactions?"
 msgstr ""
 
@@ -383,7 +383,7 @@ msgid "Confirm Disconnect"
 msgstr "Επιβεβαίωση Αποσύνδεσης"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:121
-#: src/components/wallet/standard/WalletStandard.tsx:619
+#: src/components/wallet/standard/WalletStandard.tsx:645
 msgid "Confirmation"
 msgstr ""
 
@@ -494,8 +494,8 @@ msgid "Create Trade Offer"
 msgstr "Δημιουργία Προσφοράς Συναλλαγής"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:539
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:683
-#: src/components/wallet/standard/WalletStandard.tsx:474
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:685
+#: src/components/wallet/standard/WalletStandard.tsx:484
 msgid "Create Transaction"
 msgstr "Δημιουργία Συναλλαγής"
 
@@ -598,7 +598,7 @@ msgstr "Καθυστέρηση"
 #: src/components/plotNFT/PlotNFTCard.tsx:122
 #: src/components/selectKey/SelectKey.tsx:66
 #: src/components/selectKey/SelectKey.tsx:115
-#: src/components/wallet/standard/WalletStandard.tsx:620
+#: src/components/wallet/standard/WalletStandard.tsx:646
 msgid "Delete"
 msgstr "Διαγραφή"
 
@@ -608,7 +608,7 @@ msgid "Delete Plot"
 msgstr "Διαγραφή Plot"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:315
-#: src/components/wallet/standard/WalletStandard.tsx:654
+#: src/components/wallet/standard/WalletStandard.tsx:680
 msgid "Delete Unconfirmed Transactions"
 msgstr ""
 
@@ -757,7 +757,7 @@ msgstr "Απέτυχε το άνοιγμα (invalid plots)"
 
 #: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:607
-#: src/components/wallet/standard/WalletStandard.tsx:523
+#: src/components/wallet/standard/WalletStandard.tsx:536
 msgid "Farm"
 msgstr "Farm"
 
@@ -827,8 +827,8 @@ msgstr "Κατάσταση Συγκομιδής"
 #: src/components/wallet/create/createNewColouredCoin.jsx:125
 #: src/components/wallet/create/createRLAdmin.jsx:237
 #: src/components/wallet/create/createRLAdmin.jsx:265
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:732
-#: src/components/wallet/standard/WalletStandard.tsx:515
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:735
+#: src/components/wallet/standard/WalletStandard.tsx:528
 msgid "Fee"
 msgstr "Προμήθεια"
 
@@ -909,7 +909,7 @@ msgstr "Δημιουργία Νέου Χρώματος"
 msgid "Grid view"
 msgstr ""
 
-#: src/components/wallet/standard/WalletStandard.tsx:574
+#: src/components/wallet/standard/WalletStandard.tsx:600
 msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
 msgstr "Τα HD ή τα Hierarchical Deterministic keys είναι ένας τύπος δημόσιου κλειδιού/ιδιωτικού κλειδιού όπου ένα ιδιωτικό κλειδί μπορεί να έχει ένα σχεδόν άπειρο αριθμό διαφορετικών δημόσιων κλειδιών (και συνεπώς και διευθύνσεις λήψης πορτοφολιού) που όλα τελικά θα επανέλθουν και θα δαπανηθούν από ένα μόνο ιδιωτικό κλειδί."
 
@@ -1193,7 +1193,7 @@ msgstr "Όνομα Δικτύου"
 #~ msgstr "Network not launched yet, waiting for genesis challenge!"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:685
-#: src/components/wallet/standard/WalletStandard.tsx:570
+#: src/components/wallet/standard/WalletStandard.tsx:596
 msgid "New Address"
 msgstr "Νέα διεύθυνση"
 
@@ -1313,7 +1313,7 @@ msgstr "Προσφορά"
 msgid "Offers Created"
 msgstr "Δημιουργήθηκαν Προσφορές"
 
-#: src/components/wallet/standard/WalletStandard.tsx:476
+#: src/components/wallet/standard/WalletStandard.tsx:489
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "Κατά μέσο όρο υπάρχει ένα λεπτό μεταξύ κάθε μπλοκ συναλλαγών. Αν δεν υπάρχει συμφόρηση, μπορείτε να περιμένετε ότι η συναλλαγή σας θα συμπεριληφθεί σε λιγότερο από ένα λεπτό."
 
@@ -1729,7 +1729,7 @@ msgid "Rate Limited User Wallet Setup"
 msgstr "Rate Limited User Wallet Setup"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:649
-#: src/components/wallet/standard/WalletStandard.tsx:567
+#: src/components/wallet/standard/WalletStandard.tsx:590
 msgid "Receive Address"
 msgstr "Διεύθυνση Λήψης"
 
@@ -1870,8 +1870,8 @@ msgid "Sell"
 msgstr "Πώληση"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:617
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:747
-#: src/components/wallet/standard/WalletStandard.tsx:533
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:750
+#: src/components/wallet/standard/WalletStandard.tsx:546
 msgid "Send"
 msgstr "Αποστολή"
 
@@ -1928,7 +1928,7 @@ msgstr "Spare"
 msgid "Spare Blockchain Wiki"
 msgstr "Spare Blockchain Wiki"
 
-#: src/components/wallet/standard/WalletStandard.tsx:638
+#: src/components/wallet/standard/WalletStandard.tsx:664
 msgid "Spare Wallet"
 msgstr "Πορτοφόλι Spare"
 
@@ -2431,7 +2431,7 @@ msgid "Waiting for the transaction to be confirmed"
 msgstr ""
 
 #: src/components/pool/PoolOverview.tsx:185
-#: src/components/wallet/standard/WalletStandard.tsx:665
+#: src/components/wallet/standard/WalletStandard.tsx:691
 msgid "Wallet Status:"
 msgstr ""
 
