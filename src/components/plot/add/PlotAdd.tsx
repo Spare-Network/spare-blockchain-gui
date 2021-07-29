@@ -8,13 +8,7 @@ import {
   FormBackButton,
   Loading,
 } from '@spare/core';
-import {
-  default as React,
-  default as React,
-  useEffect,
-  useRef,
-  useState,
-} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router';

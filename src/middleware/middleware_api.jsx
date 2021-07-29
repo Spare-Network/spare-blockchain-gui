@@ -7,7 +7,7 @@ import config from '../config/config';
 import { startService, startServiceTest } from '../modules/daemon_messages';
 import { openDialog, openErrorDialog } from '../modules/dialog';
 import {
-  getFarmerConnections, getLatestChallenges, pingFarmer
+  getFarmerConnections, getHarvesters, getLatestChallenges, pingFarmer
 } from '../modules/farmerMessages';
 import {
   getBlockChainState,
@@ -15,15 +15,9 @@ import {
   updateUnfinishedSubBlockHeaders
 } from '../modules/fullnodeMessages';
 import {
-  getLatestChallenges,
-  getFarmerConnections,
-  pingFarmer,
-  getHarvesters,
-} from '../modules/farmerMessages';
-import {
   getPlotDirectories,
   pingHarvester,
-  refreshPlots,
+  refreshPlots
 } from '../modules/harvesterMessages';
 import {
   did_get_did, did_get_recovery_list, format_message, getNetworkInfo, get_address, get_balance_for_wallet, get_colour_info,

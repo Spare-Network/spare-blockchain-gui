@@ -534,7 +534,10 @@ function SendCard(props: SendCardProps) {
   }
 
   return (
-    <Card title={<Trans>Create Transaction</Trans>}>
+    <Card title={
+      <Typography >
+      <span style={{ color: "#E9398D", fontSize: 24, fontWeight: 400, fontFamily: "Josefin" }}><Trans>Create Transaction</Trans></span>
+    </Typography>}>
       {result_message && (
         <Grid item xs={12}>
           <p className={result_class}>{result_message}</p>
@@ -641,7 +644,10 @@ function AddressCard(props: AddressCardProps) {
   }
 
   return (
-    <Card title={<Trans>Receive Address</Trans>}>
+    <Card title={
+    <Typography >
+      <span style={{ color: "#E9398D", fontSize: 24, fontWeight: 400, fontFamily: "Josefin" }}><Trans>Receive Address</Trans></span>
+    </Typography>}>
       <Grid item xs={12}>
         <Box display="flex">
           <Box flexGrow={1}>

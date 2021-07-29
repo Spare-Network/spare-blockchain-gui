@@ -8,7 +8,7 @@ import {
 } from '@material-ui/core';
 import { Alert } from '@material-ui/lab';
 import { Card, Flex, FormatLargeNumber, Link, Loading, TooltipIcon } from '@spare/core';
-import { default as React, default as React, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory, useParams } from 'react-router-dom';
 import useCurrencyCode from '../../hooks/useCurrencyCode';

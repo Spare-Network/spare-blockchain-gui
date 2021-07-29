@@ -1,8 +1,6 @@
 import { Container } from '@material-ui/core';
 import { Flex, Loading } from '@spare/core';
-import {
-  default as React,
-  default as React,
+import React, {
   ReactElement,
   ReactNode,
 } from 'react';

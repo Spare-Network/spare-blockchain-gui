@@ -23,8 +23,8 @@ msgid "(Optional)"
 msgstr "(nem kötelező)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
-msgid "*Want to explore Spare’s blocks further? Check out <0>Spare Explorer</0> built by an open source developer."
-msgstr "Fel szeretnéd fedezni a Spare rendszerét bővebben? Nézd meg a <0> Spare Explorert</0> amit egy nyílt forráskóddal foglalkozó fejlesztő készített."
+#~ msgid "*Want to explore Spare’s blocks further? Check out <0>Spare Explorer</0> built by an open source developer."
+#~ msgstr "Fel szeretnéd fedezni a Spare rendszerét bővebben? Nézd meg a <0> Spare Explorert</0> amit egy nyílt forráskóddal foglalkozó fejlesztő készített."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -38,20 +38,20 @@ msgstr "+ Új Plot NFT Hozzáadása"
 msgid "128 buckets is recommended"
 msgstr "Az ajánlott vödrök száma 128"
 
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:98
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:99
 msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
 msgstr "A betakarító egy szolgáltatás ahol a parcellák valójában tárolásra kerülnek. A gazdász és a betakarító kommunikációjából kivehető egy teljes rész, hogy látható legyen miként is áll a lánc. Alább láthatód azokat a betakarítókat akik a hálózatodhoz vannak csatlakozva. Tudj meg többet"
 
-#: src/electron/main.tsx:422
-#: src/electron/main.tsx:509
+#: src/electron/main.tsx:417
+#: src/electron/main.tsx:504
 msgid "About Spare Blockchain"
 msgstr "A Spare Blockchain-ről"
 
-#: src/components/trading/ViewOffer.jsx:74
+#: src/components/trading/ViewOffer.jsx:72
 msgid "Accept"
 msgstr "Elfogad"
 
-#: src/components/trading/TradingOverview.jsx:228
+#: src/components/trading/TradingOverview.jsx:221
 msgid "Accepted at time:"
 msgstr "Elfogadás ideje:"
 
@@ -61,18 +61,22 @@ msgstr "Elfogadás ideje:"
 msgid "Action"
 msgstr "Művelet"
 
-#: src/components/farm/FarmFullNodeConnections.tsx:67
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:67
-#: src/components/fullNode/FullNodeConnections.tsx:82
+#: src/components/farm/FarmFullNodeConnections.tsx:64
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:64
+#: src/components/fullNode/FullNodeConnections.tsx:83
 #: src/components/pool/PoolOverview.tsx:69
 msgid "Actions"
 msgstr "Műveletek"
 
-#: src/components/trading/CreateOffer.jsx:201
+#: src/components/trading/CreateOffer.jsx:196
 msgid "Add"
 msgstr "Hozzáadás"
 
+#: src/components/farm/overview/FarmOverviewHero.tsx:88
+#: src/components/plot/PlotAddDirectoryDialog.tsx:68
+#: src/components/plot/PlotHeader.tsx:63
 #: src/components/plot/PlotHeader.tsx:91
+#: src/components/plot/overview/PlotOverviewHero.tsx:73
 msgid "Add Plot Directory"
 msgstr "Plot könyvtár hozzáadása"
 
@@ -84,11 +88,8 @@ msgstr "Plot hozzáadása a sorhoz"
 #~ msgid "Add Wallet"
 #~ msgstr "Add Wallet"
 
-#: src/components/farm/overview/FarmOverviewHero.tsx:46
-#: src/components/plot/PlotHeader.tsx:63
-#: src/components/plot/add/PlotAdd.tsx:160
-#: src/components/plot/overview/PlotOverviewHero.tsx:54
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:230
+#: src/components/plot/add/PlotAdd.tsx:164
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:232
 #: src/components/plotNFT/PlotNFTCard.tsx:272
 msgid "Add a Plot"
 msgstr "Plot hozzáadása"
@@ -98,8 +99,12 @@ msgid "Add a Plot NFT"
 msgstr "Plot NFT Hozzáadása"
 
 #: src/components/plot/PlotAddDirectoryDialog.tsx:68
-msgid "Add a plot"
-msgstr "Plot hozzáadása"
+#~ msgid "Add a plot"
+#~ msgstr "Plot hozzáadása"
+
+#: src/components/plot/overview/PlotOverviewHero.tsx:64
+msgid "Add old plots and start mining on both networks simultaneously"
+msgstr ""
 
 #: src/components/plot/PlotAddDirectoryDialog.tsx:107
 msgid "Add plot directory"
@@ -109,42 +114,42 @@ msgstr "Parcella könyvtár hozzáadása"
 msgid "Add {currencyCode} from the Faucet"
 msgstr "{currencyCode} hozzáadása a csapból"
 
-#: src/components/wallet/coloured/WalletColoured.tsx:561
+#: src/components/wallet/coloured/WalletColoured.tsx:558
 #: src/components/wallet/coloured/WalletColoured.tsx:657
-#: src/components/wallet/standard/WalletStandard.tsx:596
+#: src/components/wallet/standard/WalletStandard.tsx:587
 msgid "Address"
 msgstr "Cím"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:701
-#: src/components/wallet/standard/WalletStandard.tsx:503
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:700
+#: src/components/wallet/standard/WalletStandard.tsx:494
 msgid "Address / Puzzle hash"
 msgstr "Cím / Kirakós hash"
 
 #: src/components/core/components/Amount/Amount.tsx:96
-#: src/components/trading/CreateOffer.jsx:196
+#: src/components/trading/CreateOffer.jsx:191
 #: src/components/trading/TradesTable.tsx:20
 #: src/components/wallet/WalletHistory.tsx:62
-#: src/components/wallet/create/createNewColouredCoin.jsx:119
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:720
-#: src/components/wallet/standard/WalletStandard.tsx:513
+#: src/components/wallet/create/createNewColouredCoin.jsx:112
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:719
+#: src/components/wallet/standard/WalletStandard.tsx:504
 msgid "Amount"
 msgstr "Összeg"
 
-#: src/components/wallet/coloured/WalletColoured.tsx:581
+#: src/components/wallet/coloured/WalletColoured.tsx:578
 msgid "Amount ({cc_unit})"
 msgstr "Mennyiség ({cc_unit})"
 
-#: src/components/wallet/create/createRLAdmin.jsx:239
+#: src/components/wallet/create/createRLAdmin.jsx:232
 msgid "Amount For Initial Coin"
 msgstr "Az aktuális érme mennyiség"
 
 #: src/components/plot/PlotAction.tsx:30
-#: src/components/plot/queue/PlotQueueActions.tsx:46
+#: src/components/plot/queue/PlotQueueActions.tsx:47
 msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "Biztos vagy benne, hogy törlöd ezt a parcellát? A törölt parcella nem visszaállítható."
 
 #: src/components/plotNFT/PlotNFTCard.tsx:125
-#: src/components/wallet/standard/WalletStandard.tsx:632
+#: src/components/wallet/standard/WalletStandard.tsx:623
 msgid "Are you sure you want to delete unconfirmed transactions?"
 msgstr "Biztosan törölni szeretné a meg nem erősített tranzakciókat?"
 
@@ -152,7 +157,7 @@ msgstr "Biztosan törölni szeretné a meg nem erősített tranzakciókat?"
 msgid "Are you sure you want to disconnect?"
 msgstr "Biztos megszakítod?"
 
-#: src/electron/main.tsx:197
+#: src/electron/main.tsx:198
 msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
 msgstr "Biztos vagy benne, hogy kilépsz? Az ültetés és a betakarítás meg fog állni."
 
@@ -169,8 +174,8 @@ msgid "Autogenerated name from pool contract address"
 msgstr "Autogenerált név a pool szerződés címéből"
 
 #: src/components/core/components/FormBackButton/FormBackButton.tsx:46
-#: src/components/selectKey/SelectKey.tsx:68
-#: src/components/selectKey/SelectKey.tsx:110
+#: src/components/selectKey/SelectKey.tsx:67
+#: src/components/selectKey/SelectKey.tsx:116
 msgid "Back"
 msgstr "Vissza"
 
@@ -178,17 +183,16 @@ msgstr "Vissza"
 msgid "Backup file is used to restore smart wallets."
 msgstr "A biztonsági mentés arra szolgál, hogy az okos pénztárca visszaállítható legyen."
 
-#: src/components/wallet/coloured/WalletColoured.tsx:377
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:541
+#: src/components/wallet/coloured/WalletColoured.tsx:371
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:540
 msgid "Balance"
 msgstr "Egyenleg"
 
-#: src/components/block/Block.jsx:317
+#: src/components/block/Block.jsx:286
 msgid "Base Farmer Reward Amount"
 msgstr "Központi Gazdász Jutalom Mennyiség"
 
-#: src/components/farm/FarmLatestBlockChallenges.tsx:39
-#: src/components/farm/FarmLatestBlockChallenges.tsx:49
+#: src/components/farm/FarmLatestBlockChallenges.tsx:52
 msgid "Below are the current block challenges. You may or may not have a proof of space for these challenges. These blocks do not currently contain a proof of time."
 msgstr "Az alábbiakban az aktuális blokk kihívások következnek. Ezekhez a kihívásokhoz lehet, hogy van vagy nincs helybizonylatod. Ezek a blokkok jelenleg nem tartalmaznak időbizonylatot."
 
@@ -200,22 +204,22 @@ msgstr "Becslés az elmúlt 24 óra alapján"
 #~ msgid "Best estimate over last 5 hours"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:129
-#: src/components/block/Block.jsx:153
-#: src/components/block/Block.jsx:157
-#: src/components/block/Block.jsx:332
+#: src/components/block/Block.jsx:116
+#: src/components/block/Block.jsx:140
+#: src/components/block/Block.jsx:144
+#: src/components/block/Block.jsx:301
 msgid "Block"
 msgstr "Blokk"
 
-#: src/components/block/Block.jsx:137
+#: src/components/block/Block.jsx:124
 msgid "Block Test"
 msgstr "Blokk teszt"
 
-#: src/components/block/Block.jsx:235
+#: src/components/block/Block.jsx:220
 msgid "Block VDF Iterations"
 msgstr "VDF-iterációk blokkja"
 
-#: src/components/block/Block.jsx:336
+#: src/components/block/Block.jsx:305
 msgid "Block at height {0} in the Spare blockchain"
 msgstr "{0} Magasságú blokk a Spare blokkláncban"
 
@@ -223,15 +227,15 @@ msgstr "{0} Magasságú blokk a Spare blokkláncban"
 #~ msgid "Block hash"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:141
+#: src/components/block/Block.jsx:128
 msgid "Block with hash {headerHash}"
 msgstr "Blokk hash {headerHash}"
 
-#: src/components/block/Block.jsx:162
+#: src/components/block/Block.jsx:149
 msgid "Block with hash {headerHash} does not exist."
 msgstr "A {headerHash} hash-t tartalmazó blokk nem létezik."
 
-#: src/components/fullNode/FullNode.jsx:311
+#: src/components/fullNode/FullNode.jsx:332
 msgid "Blocks"
 msgstr "Blokkok"
 
@@ -239,19 +243,23 @@ msgstr "Blokkok"
 #~ msgid "Both values are empty. This is ok if you are, for example, sending your rewards to an offline wallet."
 #~ msgstr "Both values are empty. This is ok if you are, for example, sending your rewards to an offline wallet."
 
-#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:61
-#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:79
-#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:110
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:60
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:78
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:108
 msgid "Browse"
 msgstr "Tallózás"
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:73
+#: src/components/farm/overview/FarmOverviewHero.tsx:78
+msgid "Build your own Spare farm from Chia plots and support transactions in both networks"
+msgstr ""
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:67
 msgid "But you are currently farming <0/>"
 msgstr "De te jelenleg farmolsz <0/>"
 
-#: src/components/trading/CreateOffer.jsx:161
+#: src/components/trading/CreateOffer.jsx:156
 #: src/components/trading/TradesTable.tsx:47
-#: src/components/trading/TradingOverview.jsx:288
+#: src/components/trading/TradingOverview.jsx:281
 msgid "Buy"
 msgstr "Vásárlás"
 
@@ -263,7 +271,7 @@ msgstr "Vásárlás"
 #~ msgid "CCListItems.title"
 #~ msgstr ""
 
-#: src/components/selectKey/SelectKey.tsx:170
+#: src/components/selectKey/SelectKey.tsx:185
 msgid "Can be backed up to mnemonic seed"
 msgstr "Biztonsági mentés elérhető a mnemonic maggal"
 
@@ -273,13 +281,13 @@ msgstr "Biztonsági mentés elérhető a mnemonic maggal"
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:123
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:87
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:30
-#: src/components/trading/CreateOffer.jsx:139
-#: src/components/trading/TradingOverview.jsx:400
-#: src/components/trading/ViewOffer.jsx:71
+#: src/components/trading/CreateOffer.jsx:134
+#: src/components/trading/TradingOverview.jsx:393
+#: src/components/trading/ViewOffer.jsx:69
 msgid "Cancel"
 msgstr "Mégsem"
 
-#: src/components/trading/TradingOverview.jsx:389
+#: src/components/trading/TradingOverview.jsx:382
 msgid "Cancel and Spend"
 msgstr "Mégse és Fizetés"
 
@@ -295,31 +303,23 @@ msgstr "Kihívás"
 msgid "Challenge Hash"
 msgstr "Hash kihívás"
 
-#: src/components/plotNFT/PlotNFTChangePool.tsx:111
+#: src/components/plotNFT/PlotNFTChangePool.tsx:110
 msgid "Change"
 msgstr "Módosítás"
 
-#: src/components/plotNFT/PlotNFTCard.tsx:408
-#: src/components/plotNFT/PlotNFTChangePool.tsx:110
+#: src/components/plotNFT/PlotNFTCard.tsx:412
+#: src/components/plotNFT/PlotNFTChangePool.tsx:109
 #: src/components/pool/PoolOverview.tsx:115
 msgid "Change Pool"
 msgstr "Pool Váltás"
 
 #: src/electron/main.tsx:401
-msgid "Chat on KeyBase"
-msgstr "Csevegés a KeyBase-n"
+#~ msgid "Chat on KeyBase"
+#~ msgstr "Csevegés a KeyBase-n"
 
-#: src/electron/main.tsx:419
-msgid "Spare"
-msgstr "Spare"
-
-#: src/electron/main.tsx:358
-msgid "Spare Blockchain Wiki"
-msgstr "Spare Blokklánc Wiki"
-
-#: src/components/wallet/standard/WalletStandard.tsx:647
-msgid "Spare Wallet"
-msgstr "Spare Pénztárca"
+#: src/components/wallet/standard/WalletStandard.tsx:638
+#~ msgid "Chia Wallet"
+#~ msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -329,7 +329,7 @@ msgstr "Válaszd ki a parcelláid számát"
 msgid "Choose Plot Size"
 msgstr "Válassz parcella méretet"
 
-#: src/components/plotNFT/PlotNFTCard.tsx:384
+#: src/components/plotNFT/PlotNFTCard.tsx:388
 #: src/components/pool/PoolOverview.tsx:92
 msgid "Claim Rewards"
 msgstr "Kérjen jutalmakat"
@@ -343,24 +343,24 @@ msgstr "Bezárás"
 msgid "Closing down node and server"
 msgstr "Node és szerver bezárása"
 
-#: src/components/trading/TradingOverview.jsx:366
+#: src/components/trading/TradingOverview.jsx:359
 msgid "Coins:"
 msgstr "Érmék:"
 
-#: src/components/trading/CreateOffer.jsx:172
+#: src/components/trading/CreateOffer.jsx:167
 #: src/components/trading/TradesTable.tsx:24
 msgid "Colour"
 msgstr "Szín"
 
-#: src/components/wallet/coloured/WalletColoured.tsx:223
+#: src/components/wallet/coloured/WalletColoured.tsx:217
 msgid "Colour Info"
 msgstr "Szín Információ"
 
-#: src/components/wallet/create/createExistingColouredCoin.jsx:110
+#: src/components/wallet/create/createExistingColouredCoin.jsx:103
 msgid "Colour String"
 msgstr "Szín Szál"
 
-#: src/components/wallet/coloured/WalletColoured.tsx:228
+#: src/components/wallet/coloured/WalletColoured.tsx:222
 msgid "Colour:"
 msgstr "Szín:"
 
@@ -372,8 +372,8 @@ msgstr "Színezett Érme"
 msgid "Coloured Coin Options"
 msgstr "Színezett érme lehetőségek"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:168
-#: src/electron/main.tsx:195
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:167
+#: src/electron/main.tsx:196
 #: src/hooks/useAbsorbRewards.tsx:46
 msgid "Confirm"
 msgstr "Megerősítés"
@@ -383,11 +383,11 @@ msgid "Confirm Disconnect"
 msgstr "Megerősítés Lecsatlakozás"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:121
-#: src/components/wallet/standard/WalletStandard.tsx:628
+#: src/components/wallet/standard/WalletStandard.tsx:619
 msgid "Confirmation"
 msgstr "Megerősítés"
 
-#: src/components/trading/TradingOverview.jsx:201
+#: src/components/trading/TradingOverview.jsx:194
 msgid "Confirmed at block:"
 msgstr "Megerősítve ennél a blokknál:"
 
@@ -400,7 +400,7 @@ msgid "Connect"
 msgstr "Csatlakozás"
 
 #: src/components/fullNode/FullNodeAddConnection.tsx:68
-#: src/components/fullNode/FullNodeConnections.tsx:112
+#: src/components/fullNode/FullNodeConnections.tsx:127
 msgid "Connect to other peers"
 msgstr "Csatlakozás másokhoz"
 
@@ -409,6 +409,7 @@ msgid "Connect to pool"
 msgstr "Csatlakozzon a pool-hoz"
 
 #: src/components/core/components/FormatConnectionStatus/FormatConnectionStatus.tsx:51
+#: src/components/fullNode/FullNode.jsx:157
 #: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:17
 msgid "Connected"
 msgstr "Csatlakozva"
@@ -417,48 +418,49 @@ msgstr "Csatlakozva"
 msgid "Connecting to wallet"
 msgstr "Csatlakozás a tárcához"
 
+#: src/components/fullNode/FullNode.jsx:155
 #: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:15
 msgid "Connection Status"
 msgstr "Kapcsolat állapota"
 
-#: src/components/farm/FarmFullNodeConnections.tsx:111
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:109
+#: src/components/farm/FarmFullNodeConnections.tsx:105
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:110
 msgid "Connection Status:"
 msgstr "A kapcsolat állapota:"
 
-#: src/components/fullNode/FullNodeConnections.tsx:75
+#: src/components/fullNode/FullNodeConnections.tsx:76
 msgid "Connection type"
 msgstr "A kapcsolat típusa"
 
-#: src/components/fullNode/FullNodeConnections.tsx:109
+#: src/components/fullNode/FullNodeConnections.tsx:120
 msgid "Connections"
 msgstr "Kapcsolatok"
 
-#: src/electron/main.tsx:382
+#: src/electron/main.tsx:383
 msgid "Contribute on GitHub"
 msgstr "Közreműködés a GitHub-on"
 
-#: src/components/core/components/CopyToClipboard/CopyToClipboard.tsx:31
+#: src/components/core/components/CopyToClipboard/CopyToClipboard.tsx:32
 msgid "Copied"
 msgstr "Másolva"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:670
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:306
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:428
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:485
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:305
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:427
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:484
 msgid "Copy"
 msgstr "Másol"
 
-#: src/components/core/components/CopyToClipboard/CopyToClipboard.tsx:33
+#: src/components/core/components/CopyToClipboard/CopyToClipboard.tsx:34
 msgid "Copy to Clipboard"
 msgstr "Másolás a vágólapra"
 
 #: src/components/backup/BackupCreate.tsx:78
-#: src/components/plot/add/PlotAdd.tsx:177
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:175
-#: src/components/wallet/create/createExistingColouredCoin.jsx:133
-#: src/components/wallet/create/createNewColouredCoin.jsx:142
-#: src/components/wallet/create/createRLAdmin.jsx:307
+#: src/components/plot/add/PlotAdd.tsx:181
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:181
+#: src/components/wallet/create/createExistingColouredCoin.jsx:126
+#: src/components/wallet/create/createNewColouredCoin.jsx:135
+#: src/components/wallet/create/createRLAdmin.jsx:300
 #: src/components/wallet/create/createRLUser.jsx:99
 msgid "Create"
 msgstr "Létrehoz"
@@ -475,7 +477,7 @@ msgstr "Ajánlat létrehozása"
 #~ msgid "Create Plot"
 #~ msgstr "Create Plot"
 
-#: src/components/wallet/create/createRLAdmin.jsx:188
+#: src/components/wallet/create/createRLAdmin.jsx:181
 msgid "Create Rate Limited Admin Wallet"
 msgstr "Korlátozott Arányú Admin Tárca létrehozása"
 
@@ -487,13 +489,13 @@ msgstr "Korlátozott Arányú Felhasználó Tárca létrehozása"
 #~ msgid "Create Trade"
 #~ msgstr ""
 
-#: src/components/trading/CreateOffer.jsx:135
+#: src/components/trading/CreateOffer.jsx:130
 msgid "Create Trade Offer"
 msgstr "Kereskedelmi ajánlat létrehozása"
 
-#: src/components/wallet/coloured/WalletColoured.tsx:543
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:684
-#: src/components/wallet/standard/WalletStandard.tsx:483
+#: src/components/wallet/coloured/WalletColoured.tsx:539
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:683
+#: src/components/wallet/standard/WalletStandard.tsx:474
 msgid "Create Transaction"
 msgstr "Tranzakció létrehozása"
 
@@ -505,7 +507,7 @@ msgstr "Mentés létrehozása"
 msgid "Create a Plot NFT"
 msgstr "Hozzon létre egy Plot NFT-t"
 
-#: src/components/selectKey/SelectKey.tsx:211
+#: src/components/selectKey/SelectKey.tsx:227
 msgid "Create a new private key"
 msgstr "Új privát kulcs készítése"
 
@@ -521,7 +523,7 @@ msgstr "Új színes érme létrehozása"
 msgid "Create user wallet"
 msgstr "Felhasználó tárca létrehozása"
 
-#: src/components/wallet/create/createExistingColouredCoin.jsx:93
+#: src/components/wallet/create/createExistingColouredCoin.jsx:86
 msgid "Create wallet for colour"
 msgstr "Tárca létrehozása a színekhez"
 
@@ -533,11 +535,11 @@ msgstr "Tárca létrehozása meglévő színekhez"
 #~ msgid "CreateWallet.addWallet"
 #~ msgstr ""
 
-#: src/components/trading/TradingOverview.jsx:186
+#: src/components/trading/TradingOverview.jsx:179
 msgid "Created At:"
 msgstr "Létrehozva:"
 
-#: src/components/trading/TradingOverview.jsx:211
+#: src/components/trading/TradingOverview.jsx:204
 msgid "Created by us:"
 msgstr "Készítette:"
 
@@ -549,25 +551,25 @@ msgstr "Plot NFT létrehozása és csatlakozás a Pool-hoz"
 msgid "Creating Plot NFT for Self Pooling"
 msgstr "Plot NFT készítése az ön poolinghoz"
 
-#: src/components/plot/add/PlotAdd.tsx:86
+#: src/components/plot/add/PlotAdd.tsx:90
 msgid "Currency code is not defined"
 msgstr "A valuta kód nincs meghatározva"
 
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:139
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:141
 #: src/components/plotNFT/PlotNFTCard.tsx:181
 msgid "Current Difficulty"
 msgstr "Jelenlegi nehézség"
 
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:156
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:158
 #: src/components/plotNFT/PlotNFTCard.tsx:198
 msgid "Current Points Balance"
 msgstr "Jelenlegi pontegyenleg"
 
-#: src/components/trading/TradingOverview.jsx:182
+#: src/components/trading/TradingOverview.jsx:175
 msgid "Current trade status"
 msgstr "Jelenlegi üzlet státusz"
 
-#: src/components/selectKey/SelectKey.tsx:185
+#: src/components/selectKey/SelectKey.tsx:200
 msgid "DANGER: permanently delete private key"
 msgstr "VIGYÁZAT: Privát kulcs végleges törlése"
 
@@ -580,7 +582,7 @@ msgstr "VIGYÁZAT: Privát kulcs végleges törlése"
 #~ msgstr ""
 
 #: src/components/farm/FarmLastAttemptedProof.tsx:32
-#: src/components/trading/TradingOverview.jsx:137
+#: src/components/trading/TradingOverview.jsx:130
 #: src/components/wallet/WalletHistory.tsx:46
 msgid "Date"
 msgstr "Dátum"
@@ -591,27 +593,26 @@ msgstr "Késleltetés"
 
 #: src/components/plot/PlotAction.tsx:27
 #: src/components/plot/PlotAction.tsx:57
-#: src/components/plot/queue/PlotQueueActions.tsx:43
-#: src/components/plot/queue/PlotQueueActions.tsx:97
+#: src/components/plot/queue/PlotQueueActions.tsx:44
+#: src/components/plot/queue/PlotQueueActions.tsx:98
 #: src/components/plotNFT/PlotNFTCard.tsx:122
-#: src/components/selectKey/SelectKey.tsx:67
-#: src/components/selectKey/SelectKey.tsx:109
-#: src/components/wallet/standard/WalletStandard.tsx:629
+#: src/components/selectKey/SelectKey.tsx:66
+#: src/components/selectKey/SelectKey.tsx:115
+#: src/components/wallet/standard/WalletStandard.tsx:620
 msgid "Delete"
 msgstr "Törlés"
 
 #: src/components/plot/PlotAction.tsx:26
-#: src/components/plot/queue/PlotQueueActions.tsx:42
+#: src/components/plot/queue/PlotQueueActions.tsx:43
 msgid "Delete Plot"
 msgstr "Parcella törlése"
 
 #: src/components/plotNFT/PlotNFTCard.tsx:315
-#: src/components/wallet/standard/WalletStandard.tsx:663
+#: src/components/wallet/standard/WalletStandard.tsx:654
 msgid "Delete Unconfirmed Transactions"
 msgstr ""
 
-#: src/components/selectKey/SelectKey.tsx:108
-#: src/components/selectKey/SelectKey.tsx:229
+#: src/components/selectKey/SelectKey.tsx:114
 msgid "Delete all keys"
 msgstr "Minden kulcs törlése"
 
@@ -619,27 +620,28 @@ msgstr "Minden kulcs törlése"
 #~ msgid "Delete key"
 #~ msgstr "Delete key"
 
-#: src/components/selectKey/SelectKey.tsx:66
+#: src/components/selectKey/SelectKey.tsx:65
 msgid "Delete key {fingerprint}"
 msgstr "Kulcs törlése {fingerprint}"
 
-#: src/components/selectKey/SelectKey.tsx:113
+#: src/components/selectKey/SelectKey.tsx:119
 msgid "Deleting all keys will permanently remove the keys from your computer, make sure you have backups. Are you sure you want to continue?"
 msgstr "Az összes kulcs törlése véglegesen eltávolítja a kulcsokat a számítógépedről, ezért gondoskodj biztonsági mentésekről. Biztos, hogy folytatni szeretnéd?"
 
-#: src/components/selectKey/SelectKey.tsx:92
+#: src/components/selectKey/SelectKey.tsx:98
 msgid "Deleting the key will permanently remove the key from your computer, make sure you have backups. Are you sure you want to continue?"
 msgstr "A kulcs törlése véglegesen eltávolítja a kulcsot a számítógépedről, ezért gondoskodj biztonsági mentésről. Biztos, hogy folytatni szeretnéd?"
 
-#: src/electron/main.tsx:304
+#: src/electron/main.tsx:305
 msgid "Developer"
 msgstr "Fejlesztő"
 
-#: src/electron/main.tsx:307
+#: src/electron/main.tsx:308
 msgid "Developer Tools"
 msgstr "Fejlesztői eszközök"
 
-#: src/components/block/Block.jsx:221
+#: src/components/block/Block.jsx:206
+#: src/components/fullNode/FullNode.jsx:192
 #: src/components/fullNode/card/FullNodeCardDifficulty.tsx:20
 msgid "Difficulty"
 msgstr "Bonyolultság"
@@ -670,33 +672,33 @@ msgstr "Elosztott azonosítási lehetőségek"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:52
 #: src/components/plot/overview/PlotOverviewHero.tsx:69
-msgid "Do you have existing plots on this machine? <0>Add Plot Directory</0>"
-msgstr "Vannak meglévő parcellák ezen a gépen? <0>Parcella könyvtár Hozzáadása </0>"
+#~ msgid "Do you have existing plots on this machine? <0>Add Plot Directory</0>"
+#~ msgstr "Vannak meglévő parcellák ezen a gépen? <0>Parcella könyvtár Hozzáadása </0>"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:55
 msgid "Does your machine support parallel plotting?"
 msgstr "A géped támogatja a párhuzamos parcellákat?"
 
-#: src/components/trading/ViewOffer.jsx:39
-#: src/components/wallet/create/recoverDIDWallet.js:294
+#: src/components/trading/ViewOffer.jsx:37
+#: src/components/wallet/create/recoverDIDWallet.js:280
 msgid "Drag and drop offer file"
 msgstr "Húzza ide az ajánlatfájlt"
 
-#: src/components/backup/BackupRestore.tsx:173
+#: src/components/backup/BackupRestore.tsx:161
 msgid "Drag and drop your backup file"
 msgstr "Húzza ide a mentett fájlt"
 
-#: src/electron/main.tsx:263
+#: src/electron/main.tsx:264
 msgid "Edit"
 msgstr "Módosítás"
 
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:259
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:261
 #: src/components/plotNFT/PlotNFTCard.tsx:301
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:76
 msgid "Edit Payout Instructions"
 msgstr ""
 
-#: src/components/wallet/WalletImport.tsx:147
+#: src/components/wallet/WalletImport.tsx:142
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Spare wallet."
 msgstr "A Spare pénztárca visszaállításához írja be az elmentett 24 szóból álló mnemonikát."
 
@@ -711,8 +713,16 @@ msgid "Error"
 msgstr "Hiba"
 
 #: src/components/wallet/standard/WalletStandard.tsx:456
-msgid "Error: Cannot send Spare to coloured address. Please enter a Spare address."
-msgstr "Hiba: A Spare nem küldhető színes címre. Kérjük, adjon meg másik Spare címet."
+#~ msgid "Error: Cannot send Spare to coloured address. Please enter a Spare address."
+#~ msgstr "Hiba: A Spare nem küldhető színes címre. Kérjük, adjon meg másik Spare címet."
+
+#: src/components/wallet/standard/WalletStandard.tsx:447
+#~ msgid "Error: Cannot send chia to coloured address. Please enter a chia address."
+#~ msgstr ""
+
+#: src/components/wallet/standard/WalletStandard.tsx:447
+msgid "Error: Cannot send spare to coloured address. Please enter a spare address."
+msgstr ""
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 msgid "Estimated Network Space"
@@ -723,10 +733,11 @@ msgstr ""
 msgid "Estimated Time to Win"
 msgstr "Becsült idő a győzelemre"
 
-#: src/components/fullNode/FullNode.jsx:204
-#~ msgid "Estimated network space"
-#~ msgstr "Estimated network space"
+#: src/components/fullNode/FullNode.jsx:211
+msgid "Estimated network space"
+msgstr "Estimated network space"
 
+#: src/components/fullNode/FullNode.jsx:214
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:22
 msgid "Estimated sum of all the plotted disk space of all farmers in the network"
 msgstr "A hálózat becsült összes lemezterületének összege"
@@ -744,9 +755,9 @@ msgstr "A végleges könyvtár kizárása"
 msgid "Failed to open (invalid plots)"
 msgstr "Nem sikerült megnyitni (érvénytelen parcella)"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
-#: src/components/wallet/coloured/WalletColoured.tsx:610
-#: src/components/wallet/standard/WalletStandard.tsx:532
+#: src/components/dashboard/DashboardSideBar.tsx:54
+#: src/components/wallet/coloured/WalletColoured.tsx:607
+#: src/components/wallet/standard/WalletStandard.tsx:523
 msgid "Farm"
 msgstr "Farm"
 
@@ -754,7 +765,7 @@ msgstr "Farm"
 msgid "Farmer Public Key"
 msgstr "Farmer nyilvános kulcsa"
 
-#: src/components/block/Block.jsx:267
+#: src/components/block/Block.jsx:252
 msgid "Farmer Puzzle Hash"
 msgstr "Farmer Kirakós Részlet"
 
@@ -785,12 +796,12 @@ msgid "Farmer is not running"
 msgstr "A farmer nem fut"
 
 #: src/middleware/middleware_api.jsx:275
-msgid "Farmer public key:"
-msgstr "Farmer nyilvános kulcsa:"
+#~ msgid "Farmer public key:"
+#~ msgstr "Farmer nyilvános kulcsa:"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:33
-msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
-msgstr "A  farmerek blokkjutalmakat és tranzakciós díjakat keresnek azzal, hogy tartalék helyet szánnak a hálózatnak a tranzakciók biztosítása érdekében. Itt lesz a farm, ha hozzáadsz egy parcellát. <0> További információ </0>"
+#~ msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
+#~ msgstr "A  farmerek blokkjutalmakat és tranzakciós díjakat keresnek azzal, hogy tartalék helyet szánnak a hálózatnak a tranzakciók biztosítása érdekében. Itt lesz a farm, ha hozzáadsz egy parcellát. <0> További információ </0>"
 
 #: src/components/farm/Farm.tsx:23
 #: src/components/farm/FarmerStatus.tsx:18
@@ -808,16 +819,16 @@ msgid "Farming Status"
 msgstr "Farmer státusz"
 
 #: src/components/core/components/Fee/Fee.tsx:48
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:154
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:153
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:147
 #: src/components/pool/PoolInfo.tsx:17
 #: src/components/wallet/WalletHistory.tsx:66
-#: src/components/wallet/create/createExistingColouredCoin.jsx:123
-#: src/components/wallet/create/createNewColouredCoin.jsx:132
-#: src/components/wallet/create/createRLAdmin.jsx:244
-#: src/components/wallet/create/createRLAdmin.jsx:272
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:733
-#: src/components/wallet/standard/WalletStandard.tsx:524
+#: src/components/wallet/create/createExistingColouredCoin.jsx:116
+#: src/components/wallet/create/createNewColouredCoin.jsx:125
+#: src/components/wallet/create/createRLAdmin.jsx:237
+#: src/components/wallet/create/createRLAdmin.jsx:265
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:732
+#: src/components/wallet/standard/WalletStandard.tsx:515
 msgid "Fee"
 msgstr "Díj"
 
@@ -829,11 +840,11 @@ msgstr "Díj"
 #~ msgid "Fee ({0})"
 #~ msgstr "Fee ({0})"
 
-#: src/components/wallet/coloured/WalletColoured.tsx:595
+#: src/components/wallet/coloured/WalletColoured.tsx:592
 msgid "Fee ({currencyCode})"
 msgstr "Díjj"
 
-#: src/components/block/Block.jsx:321
+#: src/components/block/Block.jsx:290
 msgid "Fees Amount"
 msgstr "Díjak összege"
 
@@ -841,8 +852,8 @@ msgstr "Díjak összege"
 #~ msgid "Fees Puzzle Hash"
 #~ msgstr ""
 
-#: src/electron/main.tsx:255
-#: src/electron/main.tsx:456
+#: src/electron/main.tsx:256
+#: src/electron/main.tsx:451
 msgid "File"
 msgstr "Fájl"
 
@@ -856,37 +867,37 @@ msgstr "Fájlnév"
 msgid "Final folder location"
 msgstr "Végleges mappa helye"
 
-#: src/components/fullNode/FullNode.jsx:43
-#: src/components/fullNode/FullNode.jsx:98
+#: src/components/fullNode/FullNode.jsx:49
+#: src/components/fullNode/FullNode.jsx:104
 msgid "Finished"
 msgstr "Befejezve"
 
-#: src/electron/main.tsx:407
+#: src/electron/main.tsx:402
 msgid "Follow on Twitter"
 msgstr "Kövess minket a Twitteren"
 
-#: src/electron/main.tsx:366
+#: src/electron/main.tsx:367
 msgid "Frequently Asked Questions"
 msgstr "Gyakran Ismételt Kérdések"
 
-#: src/components/dashboard/DashboardSideBar.tsx:39
-#: src/components/fullNode/FullNode.jsx:323
+#: src/components/dashboard/DashboardSideBar.tsx:38
+#: src/components/fullNode/FullNode.jsx:346
 msgid "Full Node"
 msgstr "Teljes csomópont"
 
-#: src/components/fullNode/FullNode.jsx:326
-msgid "Full Node Overview"
-msgstr ""
+#: src/components/fullNode/FullNode.jsx:349
+#~ msgid "Full Node Overview"
+#~ msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:267
-#~ msgid "Full Node Status"
-#~ msgstr "Full Node Status"
+#: src/components/fullNode/FullNode.jsx:281
+msgid "Full Node Status"
+msgstr "Full Node Status"
 
-#: src/electron/main.tsx:332
+#: src/electron/main.tsx:333
 msgid "Full Screen"
 msgstr "Teljes képernyő"
 
-#: src/components/wallet/create/createNewColouredCoin.jsx:102
+#: src/components/wallet/create/createNewColouredCoin.jsx:95
 msgid "Generate New Colour"
 msgstr "Új szín létrehozása"
 
@@ -898,7 +909,7 @@ msgstr "Új szín létrehozása"
 msgid "Grid view"
 msgstr ""
 
-#: src/components/wallet/standard/WalletStandard.tsx:583
+#: src/components/wallet/standard/WalletStandard.tsx:574
 msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
 msgstr "A HD vagy a hierarchikus determinisztikus kulcsok egyfajta nyilvános kulcs / magánkulcs séma, ahol egy magánkulcsnak csaknem végtelen számú különféle nyilvános kulcsa lehet (és ezért pénztárca fogad címeket is), amelyek végül visszatérnek és egyetlen magánfizetésre használhatók privát kulcs."
 
@@ -910,25 +921,25 @@ msgstr "A HD vagy a hierarchikus determinisztikus kulcsok egyfajta nyilvános ku
 msgid "Harvester Plots"
 msgstr "Farmolható plot-ok"
 
-#: src/components/fullNode/FullNode.jsx:61
+#: src/components/fullNode/FullNode.jsx:67
 msgid "Header Hash"
 msgstr "Fejléc Hash"
 
-#: src/components/block/Block.jsx:185
+#: src/components/block/Block.jsx:170
 msgid "Header hash"
 msgstr "Fejléc Hash"
 
-#: src/components/block/Block.jsx:201
-#: src/components/fullNode/FullNode.jsx:81
-#: src/components/fullNode/FullNodeConnections.tsx:79
+#: src/components/block/Block.jsx:186
+#: src/components/fullNode/FullNode.jsx:87
+#: src/components/fullNode/FullNodeConnections.tsx:80
 msgid "Height"
 msgstr "Magasság"
 
-#: src/electron/main.tsx:354
+#: src/electron/main.tsx:355
 msgid "Help"
 msgstr "Súgó"
 
-#: src/components/core/components/LocaleToggle/LocaleToggle.tsx:76
+#: src/components/core/components/LocaleToggle/LocaleToggle.tsx:74
 msgid "Help translate"
 msgstr "Segíts a fordításban"
 
@@ -936,16 +947,16 @@ msgstr "Segíts a fordításban"
 msgid "Hide Advanced Options"
 msgstr "Speciális beállítások elrejtése"
 
-#: src/components/wallet/WalletHistory.tsx:91
+#: src/components/wallet/WalletHistory.tsx:102
 msgid "History"
 msgstr "Előzmény"
 
-#: src/components/farm/FarmFullNodeConnections.tsx:36
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:36
+#: src/components/farm/FarmFullNodeConnections.tsx:33
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:33
 msgid "Host Name"
 msgstr "Kiszolgáló neve"
 
-#: src/components/fullNode/FullNodeConnections.tsx:40
+#: src/components/fullNode/FullNodeConnections.tsx:41
 msgid "IP address"
 msgstr "IP-cím"
 
@@ -953,19 +964,19 @@ msgstr "IP-cím"
 msgid "IP address / host"
 msgstr "IP cím / kiszolgáló"
 
-#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:115
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:113
 msgid "If none selected, then it will default to the temporary directory."
 msgstr "Ha egyik sincs kiválasztva, akkor az alapértelmezés szerint az ideiglenes könyvtár lesz"
 
-#: src/components/wallet/WalletImport.tsx:144
+#: src/components/wallet/WalletImport.tsx:139
 msgid "Import Wallet from Mnemonics"
 msgstr "A Wallet importálása a Mnemonicsból"
 
-#: src/components/selectKey/SelectKey.tsx:220
+#: src/components/selectKey/SelectKey.tsx:232
 msgid "Import from Mnemonics (24 words)"
 msgstr "Importálás a memonikából (24 szó)"
 
-#: src/components/fullNode/FullNode.jsx:45
+#: src/components/fullNode/FullNode.jsx:51
 msgid "In Progress"
 msgstr "Folyamatban"
 
@@ -981,20 +992,20 @@ msgstr ""
 msgid "Index"
 msgstr "Tartalomjegyzék"
 
-#: src/components/trading/TradingOverview.jsx:214
+#: src/components/trading/TradingOverview.jsx:207
 msgid "Indicated if this offer was created by us"
 msgstr "Jelzi, ha ezt az ajánlatot mi készítettük"
 
-#: src/components/trading/TradingOverview.jsx:231
+#: src/components/trading/TradingOverview.jsx:224
 msgid "Indicated what time this offer was accepted"
 msgstr "Jelezte, hogy ezt az ajánlatot mikor fogadják el"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:333
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:472
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:332
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:471
 msgid "Info Packet"
 msgstr "Információs csomag"
 
-#: src/components/wallet/create/createRLAdmin.jsx:260
+#: src/components/wallet/create/createRLAdmin.jsx:253
 msgid "Initial Amount"
 msgstr "Kezdeti összeg"
 
@@ -1002,7 +1013,7 @@ msgstr "Kezdeti összeg"
 msgid "Initialize a Rate Limited User Wallet:"
 msgstr "Korlátozott Arányú Felhasználó Tárca létrehozása:"
 
-#: src/components/wallet/create/createRLAdmin.jsx:218
+#: src/components/wallet/create/createRLAdmin.jsx:211
 msgid "Interval"
 msgstr "Intervallum"
 
@@ -1014,7 +1025,7 @@ msgstr ""
 msgid "It is a one-time login link that can be used to log in to a pool's website. It contains a signature using the farmer's key from the plot NFT. Not all pools support this feature."
 msgstr ""
 
-#: src/components/plotNFT/PlotNFTCard.tsx:406
+#: src/components/plotNFT/PlotNFTCard.tsx:410
 #: src/components/pool/PoolOverview.tsx:113
 msgid "Join Pool"
 msgstr ""
@@ -1041,12 +1052,12 @@ msgstr ""
 msgid "K-Size"
 msgstr "K-méret"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/components/dashboard/DashboardSideBar.tsx:65
 msgid "Keys"
 msgstr "Kulcsok"
 
-#: src/components/farm/FarmFullNodeConnections.tsx:64
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:64
+#: src/components/farm/FarmFullNodeConnections.tsx:61
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:61
 msgid "KiB Up/Down"
 msgstr "KiB Feltöltés/Letöltés"
 
@@ -1058,11 +1069,11 @@ msgstr "Utoljára megkísérelt bizonyítás"
 msgid "Last Height Farmed"
 msgstr "Utolsó kitermelt blokk"
 
-#: src/components/farm/FarmLatestBlockChallenges.tsx:36
+#: src/components/farm/FarmLatestBlockChallenges.tsx:46
 msgid "Latest Block Challenges"
 msgstr "Legfrissebb blokk kihívások"
 
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:295
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:297
 #: src/components/plotNFT/PlotNFTCard.tsx:350
 msgid "Launcher Id"
 msgstr ""
@@ -1080,11 +1091,11 @@ msgstr ""
 msgid "List view"
 msgstr ""
 
-#: src/components/pool/Pool.tsx:21
+#: src/components/pool/Pool.tsx:20
 msgid "Loading Plot NFTs"
 msgstr ""
 
-#: src/components/wallet/Wallets.tsx:172
+#: src/components/wallet/Wallets.tsx:175
 msgid "Loading list of wallets"
 msgstr ""
 
@@ -1140,7 +1151,7 @@ msgstr "Bejelentkezés"
 #~ msgid "MainWalletList.title"
 #~ msgstr ""
 
-#: src/components/farm/overview/FarmOverview.tsx:53
+#: src/components/farm/overview/FarmOverview.tsx:62
 msgid "Manage Farming Rewards"
 msgstr "A gazdálkodási jutalmak kezelése"
 
@@ -1148,7 +1159,7 @@ msgstr "A gazdálkodási jutalmak kezelése"
 msgid "Manage Your Farming Rewards Target Addresses"
 msgstr "Kezelje a gazdálkodási jutalmak célcímeit"
 
-#: src/components/fullNode/FullNodeConnections.tsx:68
+#: src/components/fullNode/FullNodeConnections.tsx:69
 msgid "MiB Up/Down"
 msgstr "MiB Feltöltés/Letöltés"
 
@@ -1164,10 +1175,11 @@ msgstr "Perc"
 msgid "More memory slightly increases speed"
 msgstr "A több memória kissé növeli a sebességet"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:415
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:414
 msgid "My Pubkey"
 msgstr "Publikus kulcsom"
 
+#: src/components/fullNode/FullNode.jsx:174
 #: src/components/fullNode/card/FullNodeCardNetworkName.tsx:19
 msgid "Network Name"
 msgstr "Hálózat neve"
@@ -1181,30 +1193,30 @@ msgstr "Hálózat neve"
 #~ msgstr "Network not launched yet, waiting for genesis challenge!"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:685
-#: src/components/wallet/standard/WalletStandard.tsx:579
+#: src/components/wallet/standard/WalletStandard.tsx:570
 msgid "New Address"
 msgstr "Új cím"
 
-#: src/components/wallet/WalletAdd.tsx:63
+#: src/components/wallet/WalletAdd.tsx:60
 msgid "New Wallet"
 msgstr "Új tárca hozzáadása"
 
-#: src/components/block/Block.jsx:350
-#: src/components/wallet/WalletAdd.tsx:95
-#: src/components/wallet/WalletImport.tsx:163
+#: src/components/block/Block.jsx:320
+#: src/components/wallet/WalletAdd.tsx:92
+#: src/components/wallet/WalletImport.tsx:158
 msgid "Next"
 msgstr "Következő"
 
-#: src/components/wallet/coloured/WalletColoured.tsx:249
+#: src/components/wallet/coloured/WalletColoured.tsx:243
 msgid "Nickname"
 msgstr "Becenév"
 
-#: src/components/trading/TradingOverview.jsx:209
-#: src/electron/main.tsx:192
+#: src/components/trading/TradingOverview.jsx:202
+#: src/electron/main.tsx:193
 msgid "No"
 msgstr "Nem"
 
-#: src/middleware/middleware_api.jsx:301
+#: src/middleware/middleware_api.jsx:260
 msgid "No 24 word seed, since this key is imported."
 msgstr "Nincs 24 szó mag, mivel ezt a kulcsot importálják."
 
@@ -1212,7 +1224,7 @@ msgstr "Nincs 24 szó mag, mivel ezt a kulcsot importálják."
 msgid "No blocks farmed yet"
 msgstr "Nincs kitermelt blokk"
 
-#: src/components/wallet/WalletHistory.tsx:102
+#: src/components/wallet/WalletHistory.tsx:117
 msgid "No previous transactions"
 msgstr "Nincs korábbi tranzakció"
 
@@ -1220,9 +1232,9 @@ msgstr "Nincs korábbi tranzakció"
 msgid "No private keys for one or both addresses. Safe only if you are sending rewards to another wallet."
 msgstr "Hiányoz(nak) a cím(ek)hez tartozó privát kulcs(ok). Csak akkor biztonságos, ha egy másik tárcába küldöd a jutalmakat."
 
-#: src/components/farm/FarmFullNodeConnections.tsx:32
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:32
-#: src/components/fullNode/FullNodeConnections.tsx:36
+#: src/components/farm/FarmFullNodeConnections.tsx:29
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:29
+#: src/components/fullNode/FullNodeConnections.tsx:37
 msgid "Node ID"
 msgstr "Node azonosító"
 
@@ -1234,7 +1246,7 @@ msgstr "Node azonosító"
 msgid "None"
 msgstr ""
 
-#: src/components/farm/FarmLastAttemptedProof.tsx:68
+#: src/components/farm/FarmLastAttemptedProof.tsx:62
 msgid "None of your plots have passed the plot filter yet."
 msgstr "Még egyik kerted sem ment át a kert szűrőn."
 
@@ -1242,24 +1254,27 @@ msgstr "Még egyik kerted sem ment át a kert szűrőn."
 #: src/components/farm/card/FarmCardNotAvailable.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:23
 #: src/components/plot/PlotStatus.tsx:19
-#: src/components/plotNFT/PlotNFTCard.tsx:365
+#: src/components/plotNFT/PlotNFTCard.tsx:368
 msgid "Not Available"
 msgstr "Nem elérhető"
 
+#: src/components/fullNode/FullNode.jsx:136
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:37
 #: src/components/wallet/WalletStatus.tsx:28
 msgid "Not Synced"
 msgstr "Nem szinkronizált"
 
-#: src/components/trading/TradingOverview.jsx:222
+#: src/components/trading/TradingOverview.jsx:215
 msgid "Not accepted yet"
 msgstr "Nincs elfogadva"
 
-#: src/components/trading/TradingOverview.jsx:195
+#: src/components/trading/TradingOverview.jsx:188
 msgid "Not confirmed yet"
 msgstr "Nincs megerősítve"
 
 #: src/components/core/components/FormatConnectionStatus/FormatConnectionStatus.tsx:52
+#: src/components/fullNode/FullNode.jsx:159
+#: src/components/fullNode/FullNode.jsx:166
 #: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:17
 msgid "Not connected"
 msgstr "Nincs csatlakozva"
@@ -1272,7 +1287,7 @@ msgstr "Nem talált Parcellát"
 msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XCH reward for pooling plots."
 msgstr ""
 
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:118
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:120
 #: src/components/plotNFT/PlotNFTCard.tsx:160
 msgid "Number of Plots"
 msgstr ""
@@ -1290,15 +1305,15 @@ msgstr "Szálak száma"
 msgid "OK"
 msgstr "Rendben"
 
-#: src/components/trading/ViewOffer.jsx:67
+#: src/components/trading/ViewOffer.jsx:65
 msgid "Offer"
 msgstr "Ajánlat"
 
-#: src/components/trading/TradingOverview.jsx:413
+#: src/components/trading/TradingOverview.jsx:406
 msgid "Offers Created"
 msgstr "Az ajánlatok elkészültek"
 
-#: src/components/wallet/standard/WalletStandard.tsx:485
+#: src/components/wallet/standard/WalletStandard.tsx:476
 msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
 msgstr "Az egyes tranzakciós blokkok között átlagosan egy perc van. Hacsak nincs torlódás, akkor számíthat arra, hogy a tranzakciót kevesebb, mint egy perc alatt bekapcsolja."
 
@@ -1310,6 +1325,7 @@ msgstr "Kimenő"
 msgid "Payout Address"
 msgstr "Kifizetés címe"
 
+#: src/components/fullNode/FullNode.jsx:180
 #: src/components/fullNode/card/FullNodeCardPeakHeight.tsx:20
 msgid "Peak Height"
 msgstr "Csúcsmagasság"
@@ -1318,6 +1334,7 @@ msgstr "Csúcsmagasság"
 #~ msgid "Peak Sub-block Height"
 #~ msgstr "Peak Sub-block Height"
 
+#: src/components/fullNode/FullNode.jsx:185
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:23
 msgid "Peak Time"
 msgstr "Csúcsidôszak"
@@ -1328,77 +1345,77 @@ msgid "Pending"
 msgstr "Függőben"
 
 #: src/components/wallet/card/WalletCardPendingBalance.tsx:24
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:573
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:572
 msgid "Pending Balance"
 msgstr "Függôben lévô egyenleg"
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:24
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:578
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:577
 msgid "Pending Change"
 msgstr "Függőben lévő módosítások"
 
 #: src/components/wallet/card/WalletCardPendingTotalBalance.tsx:27
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:568
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:567
 msgid "Pending Total Balance"
 msgstr "Függôben lévô egyenleg"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:131
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:130
 #: src/hooks/useAbsorbRewards.tsx:45
 msgid "Please Confirm"
 msgstr ""
 
-#: src/components/trading/CreateOffer.jsx:100
+#: src/components/trading/CreateOffer.jsx:95
 msgid "Please add a trade pair"
 msgstr "Kérjük, adjon hozzá egy kereskedelmi párt"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:668
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:667
 msgid "Please enter 0 fee. Positive fees not supported yet for RL."
 msgstr "Kérlek ne adj meg fee-t, Pozitív fee nem támogatott egyelőre az RL-hez."
 
-#: src/components/wallet/create/createRLAdmin.jsx:140
+#: src/components/wallet/create/createRLAdmin.jsx:133
 msgid "Please enter a valid initial coin amount"
 msgstr "Kérjük, adjon meg egy érvényes kezdeti coin összeget"
 
-#: src/components/wallet/create/createNewColouredCoin.jsx:69
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:639
-#: src/components/wallet/standard/WalletStandard.tsx:432
+#: src/components/wallet/create/createNewColouredCoin.jsx:62
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:638
+#: src/components/wallet/standard/WalletStandard.tsx:423
 msgid "Please enter a valid numeric amount"
 msgstr "Kérjük, adjon meg egy érvényes adózás előtti összeget"
 
-#: src/components/wallet/create/createExistingColouredCoin.jsx:70
-#: src/components/wallet/create/createNewColouredCoin.jsx:79
-#: src/components/wallet/create/createRLAdmin.jsx:150
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:649
-#: src/components/wallet/standard/WalletStandard.tsx:444
+#: src/components/wallet/create/createExistingColouredCoin.jsx:63
+#: src/components/wallet/create/createNewColouredCoin.jsx:72
+#: src/components/wallet/create/createRLAdmin.jsx:143
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:648
+#: src/components/wallet/standard/WalletStandard.tsx:435
 msgid "Please enter a valid numeric fee"
 msgstr "Kérjük, adjon meg egy érvényes adózás előtti összeget"
 
-#: src/components/wallet/create/createRLAdmin.jsx:100
+#: src/components/wallet/create/createRLAdmin.jsx:93
 msgid "Please enter a valid numeric interval length"
 msgstr "Kérjük, érvényes számtartományt adjon meg"
 
-#: src/components/wallet/create/createRLAdmin.jsx:115
+#: src/components/wallet/create/createRLAdmin.jsx:108
 msgid "Please enter a valid numeric spendable amount"
 msgstr "Kérjük, érvényes számformátumban adja meg a ráfordítható mennyiséget"
 
-#: src/components/wallet/create/createRLAdmin.jsx:125
+#: src/components/wallet/create/createRLAdmin.jsx:118
 msgid "Please enter a valid pubkey"
 msgstr "Kérem adjon meg érvényes számot"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:623
-#: src/components/wallet/standard/WalletStandard.tsx:420
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:622
+#: src/components/wallet/standard/WalletStandard.tsx:411
 msgid "Please finish syncing before making a transaction"
 msgstr "Kérjük, fejezze be a szinkronizálást mielőtt új tranzakciót indít"
 
-#: src/components/trading/CreateOffer.jsx:66
+#: src/components/trading/CreateOffer.jsx:63
 msgid "Please select amount"
 msgstr "Válassz mennyiséget"
 
-#: src/components/trading/CreateOffer.jsx:76
+#: src/components/trading/CreateOffer.jsx:73
 msgid "Please select buy or sell"
 msgstr "Válassz a vétel vagy eladás közül"
 
-#: src/components/trading/CreateOffer.jsx:56
+#: src/components/trading/CreateOffer.jsx:53
 msgid "Please select coin colour"
 msgstr "Kérjük, válassza ki a coin színét"
 
@@ -1433,7 +1450,7 @@ msgstr "Parcella"
 msgid "Plot Count"
 msgstr "Parcellák száma"
 
-#: src/components/block/Block.jsx:299
+#: src/components/block/Block.jsx:268
 msgid "Plot Id"
 msgstr "Parcella azonosító"
 
@@ -1445,8 +1462,8 @@ msgstr "Parcella kulcs"
 msgid "Plot NFT"
 msgstr ""
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:103
-#: src/components/plotNFT/PlotNFTChangePool.tsx:81
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:102
+#: src/components/plotNFT/PlotNFTChangePool.tsx:80
 msgid "Plot NFT with p2_singleton_puzzle_hash {plotNFTId} does not exists"
 msgstr ""
 
@@ -1454,7 +1471,7 @@ msgstr ""
 #~ msgid "Plot Name"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:259
+#: src/components/block/Block.jsx:244
 msgid "Plot Public Key"
 msgstr "Parcella nyilvános kulcs"
 
@@ -1482,7 +1499,7 @@ msgstr "A parcella a {0} másolata"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:50
+#: src/components/dashboard/DashboardSideBar.tsx:49
 msgid "Plots"
 msgstr "Parcellák"
 
@@ -1491,8 +1508,8 @@ msgid "Plots Passed Filter"
 msgstr "Szűrőn átjutott parcellák"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
-msgid "Plots are allocated space on your hard drive used to farm and earn Spare. <0>Learn more</0>"
-msgstr "A cserepek a termesztéshez fenntartott helyek a merevlemezen, amikből Spare nyerhető. <0>Részletek</0>"
+#~ msgid "Plots are allocated space on your hard drive used to farm and earn Spare. <0>Learn more</0>"
+#~ msgstr "A cserepek a termesztéshez fenntartott helyek a merevlemezen, amikből Spare nyerhető. <0>Részletek</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -1510,23 +1527,23 @@ msgstr "Bekapcsolt bitfieldes parcellázás kb. 30%-kal kevesebb írási mûvele
 #~ msgid "Plotting with bitfield enabled has about 30% less overall writes and is now almost always faster. You may see reduced memory requirements with bitfield plotting disabled. If your CPU design is from before 2010 you may have to disbale bitfield plotting."
 #~ msgstr ""
 
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:174
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:176
 #: src/components/plotNFT/PlotNFTCard.tsx:216
 msgid "Points Found Since Start"
 msgstr ""
 
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:185
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:187
 #: src/components/plotNFT/PlotNFTCard.tsx:227
 msgid "Points Found in Last 24 Hours"
 msgstr ""
 
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:194
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:196
 #: src/components/plotNFT/PlotNFTCard.tsx:236
 msgid "Points Successful in Last 24 Hours"
 msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
-#: src/components/pool/Pool.tsx:25
+#: src/components/dashboard/DashboardSideBar.tsx:59
+#: src/components/pool/Pool.tsx:24
 msgid "Pool"
 msgstr ""
 
@@ -1546,12 +1563,12 @@ msgstr "Pool bejelentkező link"
 msgid "Pool Payout Instructions"
 msgstr "Pool kifizetési utasítások"
 
-#: src/components/block/Block.jsx:263
+#: src/components/block/Block.jsx:248
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:222
 msgid "Pool Public Key"
 msgstr "Parcella nyilvános kulcs"
 
-#: src/components/block/Block.jsx:283
+#: src/components/block/Block.jsx:260
 msgid "Pool Puzzle Hash"
 msgstr "Véletlenszerű Pool Hash"
 
@@ -1571,23 +1588,23 @@ msgstr "A pool-hoz használt cím nincs megfelelően formázva."
 msgid "Pool Reward Address must not be empty."
 msgstr "A pool-hoz használt cím nem lehet üres."
 
-#: src/components/block/Block.jsx:313
+#: src/components/block/Block.jsx:282
 msgid "Pool Reward Amount"
 msgstr "Pool jutalom"
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:38
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:44
 msgid "Pool does not provide relative_lock_height."
 msgstr ""
 
-#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:35
+#: src/components/plotNFT/select/PlotNFTSelectPool.tsx:41
 msgid "Pool does not provide target_puzzle_hash."
 msgstr ""
 
 #: src/middleware/middleware_api.jsx:283
-msgid "Pool public key:"
-msgstr "Pool nyilvános kulcsa:"
+#~ msgid "Pool public key:"
+#~ msgstr "Pool nyilvános kulcsa:"
 
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:272
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:274
 #: src/components/plotNFT/PlotNFTCard.tsx:327
 #: src/components/plotNFT/PlotNFTUnconfirmedCard.tsx:57
 msgid "Pool:"
@@ -1598,23 +1615,23 @@ msgstr ""
 msgid "Pooling"
 msgstr ""
 
-#: src/components/farm/FarmFullNodeConnections.tsx:42
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:42
+#: src/components/farm/FarmFullNodeConnections.tsx:39
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:39
 #: src/components/fullNode/FullNodeAddConnection.tsx:80
-#: src/components/fullNode/FullNodeConnections.tsx:46
+#: src/components/fullNode/FullNodeConnections.tsx:47
 msgid "Port"
 msgstr "Port"
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:88
-#: src/components/plotNFT/PlotNFTChangePool.tsx:74
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:87
+#: src/components/plotNFT/PlotNFTChangePool.tsx:73
 msgid "Preparing Plot NFT"
 msgstr ""
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:96
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:95
 msgid "Preparing standard wallet"
 msgstr ""
 
-#: src/components/block/Block.jsx:347
+#: src/components/block/Block.jsx:317
 msgid "Previous"
 msgstr "Előző"
 
@@ -1622,7 +1639,7 @@ msgstr "Előző"
 #~ msgid "Previous Block Hash"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:215
+#: src/components/block/Block.jsx:200
 msgid "Previous Header Hash"
 msgstr "Előző fejléc hash"
 
@@ -1630,19 +1647,23 @@ msgstr "Előző fejléc hash"
 #~ msgid "Previous Sub Block Hash"
 #~ msgstr "Previous Sub Block Hash"
 
-#: src/components/selectKey/SelectKey.tsx:165
-msgid "Private key with public fingerprint {fingerprint}"
-msgstr "Privát kulcs nyilvános ujjlenyomattal {fingerprint}"
+#: src/components/selectKey/SelectKey.tsx:176
+msgid "Private key with public fingerprint"
+msgstr ""
 
-#: src/middleware/middleware_api.jsx:249
+#: src/components/selectKey/SelectKey.tsx:165
+#~ msgid "Private key with public fingerprint {fingerprint}"
+#~ msgstr "Privát kulcs nyilvános ujjlenyomattal {fingerprint}"
+
+#: src/middleware/middleware_api.jsx:224
 msgid "Private key {0}"
 msgstr "Privát kulcs {0}"
 
-#: src/middleware/middleware_api.jsx:259
+#: src/middleware/middleware_api.jsx:234
 msgid "Private key:"
 msgstr "Privát kulcs:"
 
-#: src/components/block/Block.jsx:251
+#: src/components/block/Block.jsx:236
 msgid "Proof of Space Size"
 msgstr "Proof of Space méret"
 
@@ -1654,11 +1675,11 @@ msgstr "Felfedezett igazolások"
 msgid "Protocol Version"
 msgstr ""
 
-#: src/components/wallet/create/createRLAdmin.jsx:297
+#: src/components/wallet/create/createRLAdmin.jsx:290
 msgid "Pubkey"
 msgstr "Nyilvános kulcs"
 
-#: src/middleware/middleware_api.jsx:267
+#: src/middleware/middleware_api.jsx:242
 msgid "Public key:"
 msgstr "Nyilvános kulcsok"
 
@@ -1694,8 +1715,8 @@ msgstr "Memória maximum használat"
 msgid "Rate Limited"
 msgstr "Forgalomkorlátozás"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:391
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:438
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:390
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:437
 msgid "Rate Limited Info"
 msgstr "Forgalomkorlátozási információ"
 
@@ -1703,12 +1724,12 @@ msgstr "Forgalomkorlátozási információ"
 msgid "Rate Limited Options"
 msgstr "Forgalomkorlátozási beállítások"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:273
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:272
 msgid "Rate Limited User Wallet Setup"
 msgstr "Forgalomkorlátozott felhasználói pénztárca beállítások"
 
-#: src/components/wallet/coloured/WalletColoured.tsx:650
-#: src/components/wallet/standard/WalletStandard.tsx:576
+#: src/components/wallet/coloured/WalletColoured.tsx:649
+#: src/components/wallet/standard/WalletStandard.tsx:567
 msgid "Receive Address"
 msgstr "Fogadó cím"
 
@@ -1717,7 +1738,6 @@ msgid "Recover DID wallet"
 msgstr "DID pénztárca visszaállítása"
 
 #: src/components/plot/PlotHeader.tsx:78
-#: src/components/plot/overview/PlotOverviewHero.tsx:62
 msgid "Refresh Plots"
 msgstr "Cserepek frissítése"
 
@@ -1725,7 +1745,7 @@ msgstr "Cserepek frissítése"
 msgid "Relative Lock Height"
 msgstr ""
 
-#: src/electron/main.tsx:374
+#: src/electron/main.tsx:375
 msgid "Release Notes"
 msgstr "Kiadási megjegyzések"
 
@@ -1733,15 +1753,15 @@ msgstr "Kiadási megjegyzések"
 msgid "Removing"
 msgstr "Eltávolítás"
 
-#: src/components/wallet/coloured/WalletColoured.tsx:265
+#: src/components/wallet/coloured/WalletColoured.tsx:259
 msgid "Rename"
 msgstr "Átnevezés"
 
-#: src/electron/main.tsx:393
+#: src/electron/main.tsx:394
 msgid "Report an Issue..."
 msgstr "Hibabejelentés..."
 
-#: src/components/backup/BackupRestore.tsx:160
+#: src/components/backup/BackupRestore.tsx:148
 msgid "Restore Metadata for Coloured Coins and other Smart Wallets from Backup"
 msgstr "Állítsa vissza a színes érmék és más intelligens pénztárcák metaadatait a Biztonsági mentésből"
 
@@ -1754,13 +1774,13 @@ msgstr "Állítsa vissza a színes érmék és más intelligens pénztárcák me
 #~ msgid "SB Height"
 #~ msgstr "SB Height"
 
-#: src/components/backup/BackupRestore.tsx:186
+#: src/components/backup/BackupRestore.tsx:174
 msgid "Safe To Skip"
 msgstr "Biztonságosan átugorható"
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:199
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:126
-#: src/components/trading/CreateOffer.jsx:142
+#: src/components/trading/CreateOffer.jsx:137
 msgid "Save"
 msgstr "Mentés"
 
@@ -1772,19 +1792,19 @@ msgstr "Mentés"
 msgid "Search block by header hash"
 msgstr "Blokk keresése fejléc hash alapján"
 
-#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:93
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:92
 msgid "Second temporary folder location"
 msgstr "Második átmeneti mappa helye"
 
-#: src/components/selectKey/SelectKey.tsx:174
+#: src/components/selectKey/SelectKey.tsx:189
 msgid "See private key"
 msgstr "Lásd a privát kulcsot"
 
-#: src/middleware/middleware_api.jsx:293
+#: src/middleware/middleware_api.jsx:252
 msgid "Seed:"
 msgstr "Seed:"
 
-#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:87
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:86
 msgid "Select 2nd Temporary Directory"
 msgstr "Válasz 2. temporális könyvtárat"
 
@@ -1793,10 +1813,10 @@ msgid "Select Final Directory"
 msgstr "Válasszon ki egy könyvtárat"
 
 #: src/components/selectKey/SelectKey.tsx:133
-msgid "Select Key"
-msgstr "Válasszon kulcsot"
+#~ msgid "Select Key"
+#~ msgstr "Válasszon kulcsot"
 
-#: src/components/trading/ViewOffer.jsx:37
+#: src/components/trading/ViewOffer.jsx:35
 msgid "Select Offer"
 msgstr "Választható ajánlatok"
 
@@ -1813,12 +1833,12 @@ msgid "Select the final destination for the folder where you would like the plot
 msgstr "Válassza ki a mappát, ahol a cserepek végső tárolóhelye lesz. Javasoljuk egy nagy, lassú merevlemez használatát. (Pl. külső HDD)."
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:41
-#~ msgid "Select the temporary destination for the folder where you would like the plot to be stored. We recommend you use a fast SSD."
-#~ msgstr "Select the temporary destination for the folder where you would like the plot to be stored. We recommend you use a fast SSD."
+msgid "Select the temporary destination for the folder where you would like the plot to be stored. We recommend you use a fast SSD."
+msgstr "Select the temporary destination for the folder where you would like the plot to be stored. We recommend you use a fast SSD."
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:41
-msgid "Select the temporary destination for the folder where you would like the plot to be stored. We recommend you use a fast drive."
-msgstr "Válaszd ki a mappát, ahol a plotok átmeneti tárolóhelye lesz. Javasoljuk gyors SSD használatát."
+#~ msgid "Select the temporary destination for the folder where you would like the plot to be stored. We recommend you use a fast drive."
+#~ msgstr "Válaszd ki a mappát, ahol a plotok átmeneti tárolóhelye lesz. Javasoljuk gyors SSD használatát."
 
 #: src/components/plot/add/PlotAddNFT.tsx:81
 msgid "Select your Plot NFT"
@@ -1828,9 +1848,9 @@ msgstr ""
 msgid "Select your Plot NFT from the dropdown or create a new one."
 msgstr ""
 
-#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:61
-#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:77
-#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:108
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:60
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:76
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:106
 msgid "Selected"
 msgstr "Kiválasztva"
 
@@ -1843,23 +1863,23 @@ msgstr ""
 msgid "Self pool. When you win a block you will earn XCH rewards."
 msgstr ""
 
-#: src/components/trading/CreateOffer.jsx:164
+#: src/components/trading/CreateOffer.jsx:159
 #: src/components/trading/TradesTable.tsx:47
-#: src/components/trading/TradingOverview.jsx:288
+#: src/components/trading/TradingOverview.jsx:281
 msgid "Sell"
 msgstr "Eladás"
 
-#: src/components/wallet/coloured/WalletColoured.tsx:620
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:748
-#: src/components/wallet/standard/WalletStandard.tsx:542
+#: src/components/wallet/coloured/WalletColoured.tsx:617
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:747
+#: src/components/wallet/standard/WalletStandard.tsx:533
 msgid "Send"
 msgstr "Küldés"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:460
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:459
 msgid "Send this info packet to your Rate Limited Wallet user who must use it to complete setup of their wallet:"
 msgstr "Küldje el ezt az információs csomagot a \"Forgalomkorlátozott pénztárca\" felhasználójának, akinek a pénztárca beállításának befejezéséhez ezt kell felhasználnia:"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:279
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:278
 msgid "Send your pubkey to your Rate Limited Wallet admin:"
 msgstr "Küldje el a publikus címét a Rate Limited Wallet rendszergazdájának:"
 
@@ -1871,12 +1891,12 @@ msgstr "Speciális beállítások megjelenítése"
 #~ msgid "Show app"
 #~ msgstr "Show app"
 
-#: src/components/trading/CreateOffer.jsx:153
+#: src/components/trading/CreateOffer.jsx:148
 #: src/components/trading/TradesTable.tsx:16
 msgid "Side"
 msgstr "Oldal"
 
-#: src/components/selectKey/SelectKey.tsx:138
+#: src/components/selectKey/SelectKey.tsx:148
 msgid "Sign In"
 msgstr "Bejelentkezés"
 
@@ -1900,56 +1920,77 @@ msgstr ""
 msgid "Something went wrong"
 msgstr "Hiba történt"
 
-#: src/electron/main.tsx:470
+#: src/electron/main.tsx:414
+msgid "Spare"
+msgstr "Spare"
+
+#: src/electron/main.tsx:359
+msgid "Spare Blockchain Wiki"
+msgstr "Spare Blokklánc Wiki"
+
+#: src/components/wallet/standard/WalletStandard.tsx:638
+msgid "Spare Wallet"
+msgstr "Spare Pénztárca"
+
+#: src/electron/main.tsx:465
 msgid "Speech"
 msgstr "Beszéd"
 
-#: src/components/wallet/create/createRLAdmin.jsx:230
+#: src/components/wallet/create/createRLAdmin.jsx:223
 msgid "Spendable Amount"
 msgstr "Elérhetô összeg"
 
-#: src/components/wallet/create/createRLAdmin.jsx:202
+#: src/components/wallet/create/createRLAdmin.jsx:195
 msgid "Spendable Amount Per Interval"
 msgstr "Idôszakonként elérhetô összeg"
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:24
-#: src/components/wallet/coloured/WalletColoured.tsx:384
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:548
+#: src/components/wallet/coloured/WalletColoured.tsx:378
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:547
 msgid "Spendable Balance"
 msgstr "Elérhető egyenleg"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:396
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:443
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:395
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:442
 msgid "Spending Interval (number of blocks): {interval}"
 msgstr "Költési időszak (blokkok száma): {interval}"
 
-#: src/components/wallet/create/createRLAdmin.jsx:197
+#: src/components/wallet/create/createRLAdmin.jsx:190
 msgid "Spending Interval Length (number of blocks)"
 msgstr "Költési időszak hossza (blokkok száma)"
 
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
-msgid "Spending Limit (Spare per interval): {0}"
-msgstr "Költési limit (Spare / intervallum): {0}"
+#~ msgid "Spending Limit (Spare per interval): {0}"
+#~ msgstr "Költési limit (Spare / intervallum): {0}"
 
-#: src/components/fullNode/FullNode.jsx:100
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:400
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:447
+msgid "Spending Limit (spare per interval): {0}"
+msgstr ""
+
+#: src/components/fullNode/FullNode.jsx:106
 msgid "State"
 msgstr "Megye"
 
+#: src/components/fullNode/FullNode.jsx:117
+#: src/components/fullNode/FullNode.jsx:135
+#: src/components/fullNode/FullNode.jsx:143
+#: src/components/fullNode/FullNode.jsx:165
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:59
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:67
 #: src/components/plot/overview/PlotOverviewPlots.tsx:110
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:113
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:115
 #: src/components/plotNFT/PlotNFTCard.tsx:145
 #: src/components/pool/PoolOverview.tsx:44
-#: src/components/trading/TradingOverview.jsx:128
+#: src/components/trading/TradingOverview.jsx:121
 #: src/components/wallet/WalletHistory.tsx:55
 #: src/components/wallet/WalletStatusCard.tsx:22
-#: src/components/wallet/Wallets.tsx:118
+#: src/components/wallet/Wallets.tsx:121
 msgid "Status"
 msgstr "Állapot"
 
-#: src/components/trading/TradingOverview.jsx:179
+#: src/components/trading/TradingOverview.jsx:172
 msgid "Status:"
 msgstr "Állapot:"
 
@@ -1981,10 +2022,11 @@ msgstr "Állapot:"
 #~ msgid "Sub Block at height {0} in the Spare blockchain"
 #~ msgstr "Sub Block at height {0} in the Spare blockchain"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:347
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:346
 msgid "Submit"
 msgstr "Elküldés"
 
+#: src/components/fullNode/FullNode.jsx:144
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:43
 #: src/components/wallet/WalletStatus.tsx:33
 msgid "Synced"
@@ -1997,6 +2039,7 @@ msgstr "Szinkronizálva"
 msgid "Syncing"
 msgstr "Szinkronizálás folyamatban"
 
+#: src/components/fullNode/FullNode.jsx:119
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:21
 msgid "Syncing <0/>/<1/>"
 msgstr "Szinkronizálás <0/>/<1/>"
@@ -2041,7 +2084,7 @@ msgstr "Átmeneti könyvtár helye"
 msgid "The application will stop working at block height 193536."
 msgstr "Az alkalmazás le fog állni 193536-os block magasságnál."
 
-#: src/components/farm/FarmFullNodeConnections.tsx:97
+#: src/components/farm/FarmFullNodeConnections.tsx:94
 msgid "The full node that your farmer is connected to is below. <0>Learn more</0>"
 msgstr "A teljes node, melyhez a farmer csatlakozik. <0>További információ</0>"
 
@@ -2050,10 +2093,12 @@ msgstr "A teljes node, melyhez a farmer csatlakozik. <0>További információ</0
 msgid "The minimum required size for mainnet is k=32"
 msgstr "A mainnet legkisebb megengedett mérete k=32"
 
+#: src/components/fullNode/FullNode.jsx:138
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:39
 msgid "The node is not synced"
 msgstr "A node nincs szinkronizálva"
 
+#: src/components/fullNode/FullNode.jsx:126
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:29
 msgid "The node is syncing, which means it is downloading blocks from other nodes, to reach the latest block in the chain"
 msgstr "A node szinkronizál, azaz más csomópontokról tölt le blokkokat amíg eléri a legfrissebb blokkot a blokkláncon"
@@ -2082,19 +2127,19 @@ msgstr "A pool URL-nek a https protokollt kell használnia. {normalizedUrl}"
 msgid "The pool switching operation was cancelled, please try again by changing pool, or self pooling"
 msgstr ""
 
-#: src/components/block/Block.jsx:302
+#: src/components/block/Block.jsx:271
 msgid "The seed used to create the plot. This depends on the pool pk and plot pk."
 msgstr "A plot létrehozásához használt kulcskód. Ez a \"pool\" pk-jától és a \"plot\" pk-jától függ."
 
-#: src/components/block/Block.jsx:228
+#: src/components/block/Block.jsx:213
 msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this sub block."
 msgstr "A VDF (ellenőrizhető késleltetési függvény) teljes száma vagy az időismétlések igazolása a teljes láncban ezen alblokkig."
 
-#: src/components/block/Block.jsx:244
+#: src/components/block/Block.jsx:229
 msgid "The total number of VDF (verifiable delay function) or proof of time iterations on this block."
 msgstr "A VDF (ellenőrizhető késleltetési függvény) teljes száma vagy az időbeli ismétlések igazolása ebben a blokkban."
 
-#: src/components/block/Block.jsx:324
+#: src/components/block/Block.jsx:293
 msgid "The total transactions fees in this block. Rewarded to the farmer."
 msgstr "A tranzakciós díjak összesítve ebben a blokkban, mely a farmer jutalma."
 
@@ -2110,12 +2155,12 @@ msgstr "Ezek a plotok érvénytelenek, lehet, hogy törölni kellene ôket."
 msgid "This allows you to add a directory that has plots in it. If you have not created any plots, go to the plotting screen."
 msgstr "Ez lehetôvé teszi, hogy hozzáadj egy könyvtárat, amiben parcellák vannak. Ha nem hoztál létre parcellákat, akkor menj a mûvelés képernyôre."
 
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:130
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:132
 #: src/components/plotNFT/PlotNFTCard.tsx:172
 msgid "This difficulty is an artifically lower difficulty than on the real network, and is used when farming, in order to find more proofs and send them to the pool. The more plots you have, the higher difficulty you will have. However, the difficulty does not affect rewards."
 msgstr ""
 
-#: src/components/trading/CreateOffer.jsx:123
+#: src/components/trading/CreateOffer.jsx:118
 #: src/hooks/useSelectDirectory.tsx:31
 #: src/hooks/useSelectFile.tsx:21
 msgid "This feature is available only from the GUI."
@@ -2135,37 +2180,43 @@ msgstr ""
 "Ez a függőben lévő, bejövő és kimenő ügyletek összesítése. (Még nem a blokklánc részei)\n"
 "Nem tartalmazza a termesztési díjakat."
 
+#: src/components/fullNode/FullNode.jsx:187
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:24
 msgid "This is the time of the latest peak sub block."
 msgstr "Ez a legutóbbi csúcs alblokk ideje."
 
-#: src/components/block/Block.jsx:194
+#: src/components/block/Block.jsx:179
 msgid "This is the time the block was created by the farmer, which is before it is finalized with a proof of time"
 msgstr "Ekkor hozta létre a blokkot a gazdálkodó, ami még az idő igazolásával véglegesítés előtt van"
 
 #: src/components/wallet/card/WalletCardTotalBalance.tsx:34
-msgid "This is the total amount of Spare in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "Ez az összes Spare mennyiség a blokkláncban az aktuális csúcs alblokkban, amelyet a privát kulcsaid vezérelnek. Ez magában foglalja a befagyasztott gazdálkodási jutalmakat, de nem a függőben lévő bejövő és kimenő tranzakciókat."
+#~ msgid "This is the total amount of Spare in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+#~ msgstr "Ez az összes Spare mennyiség a blokkláncban az aktuális csúcs alblokkban, amelyet a privát kulcsaid vezérelnek. Ez magában foglalja a befagyasztott gazdálkodási jutalmakat, de nem a függőben lévő bejövő és kimenő tranzakciókat."
+
+#: src/components/wallet/card/WalletCardTotalBalance.tsx:34
+msgid "This is the total amount of spare in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr ""
 
 #: src/components/wallet/card/WalletCardPendingTotalBalance.tsx:29
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
 msgstr "Ez a teljes egyenleg + függőben lévő egyenleg: ez lesz az egyenleged az összes függőben lévő tranzakció megerősítése után."
 
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:149
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:151
 #: src/components/plotNFT/PlotNFTCard.tsx:191
 msgid "This is the total number of points this plotNFT has with this pool, since the last payout. The pool will reset the points after making a payout."
 msgstr ""
 
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:166
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:168
 #: src/components/plotNFT/PlotNFTCard.tsx:208
 msgid "This is the total number of points your farmer has found for this plot NFT. Each k32 plot will get around 10 points per day, so if you have 10TiB, should should expect around 1000 points per day, or 41 points per hour."
 msgstr ""
 
+#: src/components/fullNode/FullNode.jsx:147
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:46
 msgid "This node is fully caught up and validating the network"
 msgstr "Ez a csomópont teljesen felzárkózott és érvényesíti a hálózatot"
 
-#: src/components/plotNFT/PlotExternalNFTCard.tsx:308
+#: src/components/plotNFT/PlotExternalNFTCard.tsx:310
 msgid "This plot NFT is assigned to a different key. You can still create plots for this plot NFT, but you can not make changes."
 msgstr ""
 
@@ -2181,11 +2232,11 @@ msgstr "Ez a plot NFT nem kapcsolódik pool-hoz"
 msgid "This table shows you the last time your farm attempted to win a block challenge. <0>Learn more</0>"
 msgstr "Ez a táblázat megmutatja egy blokk kihívás elnyerésére tett kísérlet utolsó időpontját. <0>Részletek</0>"
 
-#: src/components/trading/TradingOverview.jsx:189
+#: src/components/trading/TradingOverview.jsx:182
 msgid "This trade was created at this time"
 msgstr "A kereskedés a következő időben jött létre"
 
-#: src/components/trading/TradingOverview.jsx:205
+#: src/components/trading/TradingOverview.jsx:198
 msgid "This trade was included on blockchain at this block height"
 msgstr "Ez a kereskedés a blokklánc ezen magasságán történt"
 
@@ -2193,7 +2244,7 @@ msgstr "Ez a kereskedés a blokklánc ezen magasságán történt"
 msgid "This version of Spare is no longer compatible with the blockchain and can not safely farm."
 msgstr "A Spare ezen verziója többé már nem kompatibilis a blokklánccal és nem biztonságos."
 
-#: src/components/fullNode/FullNode.jsx:92
+#: src/components/fullNode/FullNode.jsx:98
 msgid "Time Created"
 msgstr "Létrehozva"
 
@@ -2201,7 +2252,7 @@ msgstr "Létrehozva"
 #~ msgid "Time this trade was created at this time"
 #~ msgstr ""
 
-#: src/components/block/Block.jsx:189
+#: src/components/block/Block.jsx:174
 msgid "Timestamp"
 msgstr "Időbélyeg"
 
@@ -2210,15 +2261,12 @@ msgid "To"
 msgstr "Címzett"
 
 #: src/components/wallet/card/WalletCardTotalBalance.tsx:32
-#: src/components/wallet/coloured/WalletColoured.tsx:379
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:543
+#: src/components/wallet/coloured/WalletColoured.tsx:373
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:542
 msgid "Total Balance"
 msgstr "Teljes egyenleg"
 
-#: src/components/farm/card/FarmCardTotalSpareFarmed.tsx:15
-#~ msgid "Total Spare Farmed"
-#~ msgstr ""
-
+#: src/components/fullNode/FullNode.jsx:205
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
 msgid "Total Iterations"
 msgstr "Összes ismétlések száma"
@@ -2235,10 +2283,15 @@ msgstr "Teljes parcella adatbázis méret:"
 msgid "Total Size of Plots"
 msgstr "Parcella fájlok összes mérete"
 
-#: src/components/block/Block.jsx:225
+#: src/components/farm/card/FarmCardTotalSpareFarmed.tsx:15
+#~ msgid "Total Spare Farmed"
+#~ msgstr ""
+
+#: src/components/block/Block.jsx:210
 msgid "Total VDF Iterations"
 msgstr "Összes VDF ismétlések száma"
 
+#: src/components/fullNode/FullNode.jsx:207
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:22
 msgid "Total iterations since the start of the blockchain"
 msgstr "Összes ismétlések száma a blokklánc indulása óta"
@@ -2247,15 +2300,15 @@ msgstr "Összes ismétlések száma a blokklánc indulása óta"
 #~ msgid "Trade"
 #~ msgstr "Trade"
 
-#: src/components/trading/TradingOverview.jsx:350
+#: src/components/trading/TradingOverview.jsx:343
 msgid "Trade Details"
 msgstr "Kereskedés részletei"
 
-#: src/components/trading/TradingOverview.jsx:125
+#: src/components/trading/TradingOverview.jsx:118
 msgid "Trade ID"
 msgstr "Kereskedés azonosító"
 
-#: src/components/trading/TradingOverview.jsx:172
+#: src/components/trading/TradingOverview.jsx:165
 msgid "Trade ID:"
 msgstr "Kereskedés azonosító:"
 
@@ -2263,7 +2316,7 @@ msgstr "Kereskedés azonosító:"
 msgid "Trade Overview"
 msgstr "Kereskedés áttekintése"
 
-#: src/components/trading/TradingOverview.jsx:153
+#: src/components/trading/TradingOverview.jsx:146
 msgid "Trades will show up here"
 msgstr "A kereskedések itt fognak megjelenni"
 
@@ -2271,11 +2324,11 @@ msgstr "A kereskedések itt fognak megjelenni"
 msgid "Trading"
 msgstr "Kereskedés"
 
-#: src/components/trading/TradingOverview.jsx:422
+#: src/components/trading/TradingOverview.jsx:415
 msgid "Trading History"
 msgstr "Kereskedési előzmények"
 
-#: src/components/block/Block.jsx:309
+#: src/components/block/Block.jsx:278
 msgid "Transactions Filter Hash"
 msgstr "Tranzakciók Szűrési Hash-értéke"
 
@@ -2283,7 +2336,7 @@ msgstr "Tranzakciók Szűrési Hash-értéke"
 msgid "Type"
 msgstr "Típus"
 
-#: src/components/plot/add/PlotAdd.tsx:101
+#: src/components/plot/add/PlotAdd.tsx:105
 msgid "Unable to create plot NFT"
 msgstr ""
 
@@ -2292,15 +2345,15 @@ msgstr ""
 msgid "Unclaimed Rewards"
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:98
+#: src/components/fullNode/FullNode.jsx:104
 msgid "Unfinished"
 msgstr "Befejezetlen"
 
-#: src/components/trading/TradingOverview.jsx:175
+#: src/components/trading/TradingOverview.jsx:168
 msgid "Unique identifier"
 msgstr "Egyedi azonosító"
 
-#: src/components/core/components/LocaleToggle/LocaleToggle.tsx:55
+#: src/components/core/components/LocaleToggle/LocaleToggle.tsx:53
 msgid "Unknown"
 msgstr "Ismeretlen"
 
@@ -2308,11 +2361,12 @@ msgstr "Ismeretlen"
 msgid "Unsaved Changes"
 msgstr ""
 
-#: src/components/wallet/create/createRLAdmin.jsx:281
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:293
+#: src/components/wallet/create/createRLAdmin.jsx:274
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:292
 msgid "User Pubkey"
 msgstr "Felhasználó publikus kulcsa"
 
+#: src/components/fullNode/FullNode.jsx:199
 #: src/components/fullNode/card/FullNodeCardVDFSubSlotIterations.tsx:20
 msgid "VDF Sub Slot Iterations"
 msgstr "VDF alhelyi ismétlések"
@@ -2329,11 +2383,11 @@ msgstr ""
 msgid "Verify Pool Details"
 msgstr ""
 
-#: src/electron/main.tsx:295
+#: src/electron/main.tsx:296
 msgid "View"
 msgstr "Nézet"
 
-#: src/components/plot/queue/PlotQueueActions.tsx:79
+#: src/components/plot/queue/PlotQueueActions.tsx:80
 #: src/components/plot/queue/PlotQueueLogDialog.tsx:63
 msgid "View Log"
 msgstr "Napló megtekintése"
@@ -2351,11 +2405,11 @@ msgstr "Ajánlat megtekintése"
 msgid "View Pool Login Link"
 msgstr "Pool bejelentkezési linkjének megnézése"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:562
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:561
 msgid "View pending balances"
 msgstr "Függőben lévő egyenleg megtekintése"
 
-#: src/components/wallet/coloured/WalletColoured.tsx:393
+#: src/components/wallet/coloured/WalletColoured.tsx:387
 msgid "View pending balances..."
 msgstr "Függőben lévő egyenleg megtekintése..."
 
@@ -2379,16 +2433,16 @@ msgid "Waiting for the transaction to be confirmed"
 msgstr ""
 
 #: src/components/pool/PoolOverview.tsx:185
-#: src/components/wallet/standard/WalletStandard.tsx:674
+#: src/components/wallet/standard/WalletStandard.tsx:665
 msgid "Wallet Status:"
 msgstr ""
 
-#: src/components/wallet/Wallets.tsx:34
-#~ msgid "WalletItem.ccWallet"
-#~ msgstr ""
-
 #: src/components/wallet/Wallets.tsx:30
 #~ msgid "WalletItem.SpareWallet"
+#~ msgstr ""
+
+#: src/components/wallet/Wallets.tsx:34
+#~ msgid "WalletItem.ccWallet"
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:48
@@ -2411,8 +2465,9 @@ msgstr ""
 #~ msgid "WalletStatusCard.syncing"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:45
-#: src/components/wallet/Wallets.tsx:173
+#: src/components/dashboard/DashboardSideBar.tsx:44
+#: src/components/selectKey/SelectKey.tsx:142
+#: src/components/wallet/Wallets.tsx:176
 msgid "Wallets"
 msgstr "Tárcák"
 
@@ -2432,7 +2487,7 @@ msgstr "Szeretne többet keresni Spare-val? Adjon hozzá több telket a gazdasá
 msgid "Want to have a delay before the next plot starts?"
 msgstr "Szeretne késleltetést mielőtt elkezdi a következő percellát?"
 
-#: src/components/selectKey/SelectKey.tsx:86
+#: src/components/selectKey/SelectKey.tsx:91
 msgid "Warning: This key is used for a wallet that may have a non-zero balance. By deleting this key you may lose access to this wallet"
 msgstr "Figyelem: Ezt a kulcsot egy olyan tárcához használják, amihez pozitív egyenleg tartozhat. Ennek a kulcsnak a törlésével elveszhet a hozzáférése a tárcához"
 
@@ -2440,41 +2495,41 @@ msgstr "Figyelem: Ezt a kulcsot egy olyan tárcához használják, amihez pozit�
 msgid "Warning: This key is used for your farming rewards address. By deleting this key you may lose access to any future farming rewards"
 msgstr ""
 
-#: src/components/selectKey/SelectKey.tsx:79
+#: src/components/selectKey/SelectKey.tsx:82
 msgid "Warning: This key is used for your pool rewards address. By deleting this key you may lose access to any future pool rewards"
 msgstr ""
 
-#: src/components/block/Block.jsx:205
+#: src/components/block/Block.jsx:190
 msgid "Weight"
 msgstr "Súly"
 
-#: src/components/block/Block.jsx:208
+#: src/components/block/Block.jsx:193
 msgid "Weight is the total added difficulty of all sub blocks up to and including this one"
 msgstr "Az összes alblokk teljes hozzáadott nehézségének a súlya, egészen ehhez az egységig"
 
-#: src/components/selectKey/SelectKey.tsx:141
+#: src/components/selectKey/SelectKey.tsx:151
 msgid "Welcome to Spare. Please log in with an existing key, or create a new key."
 msgstr "Üdvözöljük a Spare-ban. Kérem jelentkezzen be egy létező kulccsal, vagy készítsen egy új kulcsot magának."
 
-#: src/components/wallet/WalletAdd.tsx:66
+#: src/components/wallet/WalletAdd.tsx:63
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
 msgstr "Üdvözöljük! A pénztárca biztonsági mentéséhez a következő szavakat használják. Nélkülük elveszíti hozzáférését pénztárcájához, biztonságban tartsa őket! Írja le az egyes szavakat a mellettük lévő sorszámmal együtt. (A sorrend fontos)"
 
-#: src/components/wallet/rateLimited/WalletRateLimited.jsx:316
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:315
 msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
 msgstr "Amikor az admin-tól megkapod a beállításokhoz szükséges információs csomagot, írd be alább, hogy befejezd a korlátozott arányú tárcád beállítását:"
 
-#: src/electron/main.tsx:340
+#: src/electron/main.tsx:341
 msgid "Window"
 msgstr "Ablak"
 
-#: src/components/farm/card/FarmCardBlockRewards.tsx:36
+#: src/components/farm/card/FarmCardBlockRewards.tsx:34
 msgid "Without fees"
 msgstr "Illeték nélkül"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:35
-#: src/components/trading/TradingOverview.jsx:209
-#: src/electron/main.tsx:193
+#: src/components/trading/TradingOverview.jsx:202
+#: src/electron/main.tsx:194
 msgid "Yes"
 msgstr "Igen"
 
@@ -2487,7 +2542,7 @@ msgstr ""
 msgid "You are not self pooling"
 msgstr ""
 
-#: src/components/plotNFT/PlotNFTCard.tsx:424
+#: src/components/plotNFT/PlotNFTCard.tsx:428
 msgid "You can still create plots for this plot NFT, but you can not make changes until sync is complete."
 msgstr ""
 
@@ -2531,7 +2586,7 @@ msgstr ""
 msgid "You need {currencyCode} to join a pool."
 msgstr "{currencyCode}-ra van szüksége, hogy a pool-ba be tudjon jelentkezni."
 
-#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:137
+#: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:136
 msgid "You will recieve <0/> to {0}"
 msgstr ""
 
@@ -2539,15 +2594,15 @@ msgstr ""
 msgid "You will recieve <0/> to {address}"
 msgstr ""
 
-#: src/components/farm/overview/FarmOverview.tsx:37
+#: src/components/farm/overview/FarmOverview.tsx:45
 msgid "Your Farm Overview"
 msgstr "A farmod áttekintése"
 
-#: src/components/farm/FarmFullNodeConnections.tsx:95
+#: src/components/farm/FarmFullNodeConnections.tsx:92
 msgid "Your Full Node Connection"
 msgstr "A teljes értékű node-od kapcsolata"
 
-#: src/components/farm/FarmYourHarvesterNetwork.tsx:96
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:95
 msgid "Your Harvester Network"
 msgstr "Az arató hálózatod"
 
@@ -2564,35 +2619,35 @@ msgid "[Error 22] File not found. Most likely one of the plot folders in your co
 msgstr "[Error 22] A fájl nem található. Valószínűleg az egyik parcella könyvtárad beállítása a config.yaml fájlban hibás."
 
 #: src/components/wallet/WalletStatusCard.tsx:41
-#: src/components/wallet/Wallets.tsx:143
+#: src/components/wallet/Wallets.tsx:146
 msgid "connections:"
 msgstr "kapcsolatok:"
 
 #: src/components/wallet/WalletStatusCard.tsx:33
-#: src/components/wallet/Wallets.tsx:135
+#: src/components/wallet/Wallets.tsx:138
 msgid "height:"
 msgstr "magasság:"
 
-#: src/components/wallet/Wallets.tsx:129
+#: src/components/wallet/Wallets.tsx:132
 msgid "not synced"
 msgstr "nincs szinkronizálva"
 
-#: src/components/plot/add/PlotAdd.tsx:105
+#: src/components/plot/add/PlotAdd.tsx:109
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr ""
 
 #: src/components/wallet/WalletStatusCard.tsx:27
-#: src/components/wallet/Wallets.tsx:123
+#: src/components/wallet/Wallets.tsx:126
 msgid "status:"
 msgstr "állapot:"
 
 #: src/components/wallet/WalletStatusCard.tsx:29
-#: src/components/wallet/Wallets.tsx:128
+#: src/components/wallet/Wallets.tsx:131
 msgid "synced"
 msgstr "szinkronizálva"
 
 #: src/components/wallet/WalletStatusCard.tsx:29
-#: src/components/wallet/Wallets.tsx:127
+#: src/components/wallet/Wallets.tsx:130
 msgid "syncing"
 msgstr "szinkronizálás"
 
@@ -2608,7 +2663,7 @@ msgstr "szinkronizálás"
 msgid "{0} points {1} - {2} hours ago"
 msgstr ""
 
-#: src/components/farm/card/FarmCardBlockRewards.tsx:35
+#: src/components/farm/card/FarmCardBlockRewards.tsx:33
 msgid "{currencyCode} Block Rewards"
 msgstr "Blokk jutalmak {currencyCode}"
 

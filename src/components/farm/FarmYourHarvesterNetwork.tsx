@@ -101,7 +101,7 @@ export default function FarmYourHarvesterNetwork() {
           actually stored. A farmer and harvester talk to a full node to see the
           state of the chain. View your network of connected harvesters below
           Learn more
-        </Trans>
+        </Trans>)
       }
       interactive
     >

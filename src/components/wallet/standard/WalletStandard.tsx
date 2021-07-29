@@ -1,3 +1,26 @@
+import { Trans } from '@lingui/macro';
+import {
+  /*
+  Tooltip,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  */
+  Box,
+  Button,
+  Grid,
+  InputAdornment,
+  ListItemIcon,
+  MenuItem,
+  TextField,
+  Typography,
+} from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import {
+  // ExpandMore as ExpandMoreIcon,
+  // Help as HelpIcon,
+  Delete as DeleteIcon,
+} from '@material-ui/icons';
 import {
   AlertDialog,
   Amount,
@@ -10,31 +33,7 @@ import {
   More,
   TextField as SpareTextField,
 } from '@spare/core';
-import { Trans } from '@lingui/macro';
-import {
-  Grid,
-  InputAdornment,
-  ListItemIcon,
-  MenuItem,
-} from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
-import {
-  // ExpandMore as ExpandMoreIcon,
-  // Help as HelpIcon,
-  Delete as DeleteIcon,
-  Help as HelpIcon,
-  // ExpandMore as ExpandMoreIcon,
-  // Help as HelpIcon,
-} from '@material-ui/icons';
-import { Loading } from '@spare/core';
-import React, {
-  Box,
-  Button,
-  React /* , { ReactNode } */,
-  TextField,
-  Tooltip,
-  Typography,
-} from 'react';
+import React /* , { ReactNode } */ from 'react';
 import { useForm, useWatch } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
 import isNumeric from 'validator/es/lib/isNumeric';
@@ -63,10 +62,10 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 100,
   },
   resultSuccess: {
-    color: '#00D983',
+    color: '#3AAC59',
   },
   resultFailure: {
-    color: '#E9398D',
+    color: 'red',
   },
   root: {
     display: 'flex',
@@ -220,10 +219,8 @@ type BalanceCardSubSectionProps = {
   tooltip?: ReactNode;
   balance: number;
 };
-
 function BalanceCardSubSection(props: BalanceCardSubSectionProps) {
   const currencyCode = useCurrencyCode();
-
   return (
     <Grid item xs={12}>
       <Box display="flex">
@@ -239,46 +236,35 @@ function BalanceCardSubSection(props: BalanceCardSubSectionProps) {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {graviton_to_spare_string(props.balance)} {currencyCode}
+            {mojo_to_chia_string(props.balance)} {currencyCode}
           </Typography>
         </Box>
       </Box>
     </Grid>
   );
 }
-
 type BalanceCardProps = {
   wallet_id: number;
 };
-
 function BalanceCard(props: BalanceCardProps) {
   const { wallet_id } = props;
-
   const wallet = useSelector((state: RootState) =>
     state.wallet_state.wallets?.find((item) => item.id === wallet_id),
   );
-
   const balance = wallet?.wallet_balance?.confirmed_wallet_balance;
   const balance_spendable = wallet?.wallet_balance?.spendable_balance;
   const balance_pending = wallet?.wallet_balance?.pending_balance;
   const pending_change = wallet?.wallet_balance?.pending_change;
-
   const balance_ptotal = balance + balance_pending;
-
   const classes = useStyles();
-
   return (
-    <Card title={
-      <Typography >
-        <span style={ { color: "#E9398D", fontSize: 24, fontWeight:400, fontFamily:"Josefin" }}><Trans>Balance</Trans></span>
-      </Typography>
-    }>
+    <Card title={<Trans>Balance</Trans>}>
       <BalanceCardSubSection
         title={<Trans>Total Balance</Trans>}
         balance={balance}
         tooltip={
           <Trans>
-            This is the total amount of spare in the blockchain at the current
+            This is the total amount of chia in the blockchain at the current
             peak sub block that is controlled by your private keys. It includes
             frozen farming rewards, but not pending incoming and outgoing
             transactions.
@@ -290,9 +276,9 @@ function BalanceCard(props: BalanceCardProps) {
         balance={balance_spendable}
         tooltip={
           <Trans>
-            This is the amount of Spare that you can currently use to make
+            This is the amount of Chia that you can currently use to make
             transactions. It does not include pending farming rewards, pending
-            incoming transactions, and Spare that you have just spent but is not
+            incoming transactions, and Chia that you have just spent but is not
             yet in the blockchain.
           </Trans>
         }
@@ -452,8 +438,6 @@ function SendCard(props: SendCardProps) {
       );
       return;
     }
-    const amount = spare_to_graviton(amount_input.value);
-    const fee = spare_to_graviton(fee_input.value);
 
     let address = data.address;
     if (address.includes('colour')) {
@@ -469,6 +453,7 @@ function SendCard(props: SendCardProps) {
       );
       return;
     }
+
     if (address.slice(0, 12) === 'spare_addr://') {
       address = address.slice(12);
     }
@@ -606,6 +591,11 @@ function AddressCard(props: AddressCardProps) {
           </span>
         </Typography>
       }
+      action={
+        <Button onClick={newAddress} variant="outlined">
+          <Trans>New Address</Trans>
+        </Button>
+      }
       tooltip={
         <Trans>
           HD or Hierarchical Deterministic keys are a type of public key/private
@@ -642,99 +632,6 @@ function AddressCard(props: AddressCardProps) {
 
 type StandardWalletProps = {
   wallet_id: number;
-};
-
-const StatusCell = (props) => {
-  const { item } = props;
-  const { label } = item;
-  const { value } = item;
-  const { tooltip } = item;
-  const { colour } = item;
-  return (
-    <Grid item xs={12}>
-      <Flex mb={-2} alignItems="center">
-        <Flex flexGrow={1} gap={1} alignItems="center">
-          <Typography variant="subtitle1">{label}</Typography>
-          {tooltip && (
-            <Tooltip title={tooltip}>
-              <HelpIcon style={{ color: '#c8c8c8', fontSize: 12 }} />
-            </Tooltip>
-          )}
-        </Flex>
-        <Typography variant="subtitle1">
-          <span style={colour ? { color: colour } : {}}>{value}</span>
-        </Typography>
-      </Flex>
-    </Grid>
-  );
-};
-
-const StatusCard = (props) => {
-  const syncing = useSelector(
-    (state: RootState) => state.wallet_state.status.syncing,
-  );
-  const synced = useSelector(
-    (state: RootState) => state.wallet_state.status.synced,
-  );
-
-  const height = useSelector(
-    (state: RootState) => state.wallet_state.status.height,
-  );
-  const connectionCount = useSelector(
-    (state: RootState) => state.wallet_state.status.connection_count,
-  );
-
-  const statusItems = [
-    {
-      label: 'Height',
-      value: height,
-      tooltip: `the node has ${height}: height`,
-      colour: '#00D983',
-    },
-    {
-      label: 'Number of connections',
-      value: connectionCount,
-      tooltip: `the node has ${connectionCount} connections`,
-      colour: '#00D983',
-    },
-    {
-      label: 'Status',
-      value: syncing ? 'Syncing' : synced ? 'Synced' : 'Not synced',
-      tooltip: `the node is ${syncing}`,
-      colour: syncing ? '#F7CA3E' : synced ? '#00D983' : '#E9398D',
-    },
-  ];
-
-  return (
-    <Card
-      title={
-        <Typography>
-          <span
-            style={{
-              color: '#E9398D',
-              fontSize: 24,
-              fontWeight: 400,
-              fontFamily: 'Josefin',
-            }}
-          >
-            <Trans>Status</Trans>
-          </span>
-        </Typography>
-      }
-    >
-      {statusItems ? (
-        <Grid spacing={4} container>
-          {statusItems.map((item) => (
-            <StatusCell item={item} key={item.label} />
-          ))}
-        </Grid>
-      ) : (
-        <Flex justifyContent="center">
-          <Loading />
-        </Flex>
-      )}
-    </Card>
-  );
 };
 
 export default function StandardWallet(props: StandardWalletProps) {

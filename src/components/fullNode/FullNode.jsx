@@ -1,7 +1,8 @@
 import { Trans } from '@lingui/macro';
-import { Box, Card, CardContent, Tooltip, Typography } from '@material-ui/core';
+import { Box, Card, CardContent, Grid, Paper, Tooltip, Typography } from '@material-ui/core';
+import HelpIcon from '@material-ui/icons/Help';
 import {
-  Flex, FormatLargeNumber, Loading, StateColor,
+  Flex, FormatBytes, FormatLargeNumber, Loading, StateColor,
   Table
 } from '@spare/core';
 import { Status } from '@spare/icons';
@@ -13,7 +14,6 @@ import styled from 'styled-components';
 // import HelpIcon from '@material-ui/icons/Help';
 import { unix_to_short_date } from '../../util/utils';
 import LayoutMain from '../layout/LayoutMain';
-import FullNodeCards from './card/FullNodeCards';
 import FullNodeBlockSearch from './FullNodeBlockSearch';
 import FullNodeConnections from './FullNodeConnections';
 
@@ -107,7 +107,7 @@ const cols = [
   },
 ];
 
-/*
+
 const getStatusItems = (state, connected, latestPeakTimestamp, networkInfo) => {
   const status_items = [];
   if (state.sync && state.sync.sync_mode) {
@@ -298,7 +298,7 @@ const FullNodeStatus = (props) => {
     </>
   );
 };
-*/
+
 
 const BlocksCard = () => {
   const { url } = useRouteMatch();
@@ -344,13 +344,8 @@ const BlocksCard = () => {
 export default function FullNode() {
   return (
     <LayoutMain title={<Trans>Full Node</Trans>}>
-      <Flex gap={1}>
-        <Typography variant="h5" gutterBottom>
-          <Trans>Full Node Overview</Trans>
-        </Typography>
-      </Flex>
       <Flex flexDirection="column" gap={3}>
-        <FullNodeCards />
+        <FullNodeStatus />
         <BlocksCard />
         <FullNodeConnections />
       </Flex>

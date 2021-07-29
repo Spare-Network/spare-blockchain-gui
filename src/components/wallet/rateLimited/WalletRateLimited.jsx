@@ -680,7 +680,10 @@ const SendCard = (props) => {
   }
 
   return (
-    <Card title={<Trans>Create Transaction</Trans>}>
+    <Card title={
+      <Typography >
+      <span style={{ color: "#E9398D", fontSize: 24, fontWeight: 400, fontFamily: "Josefin" }}><Trans>Create Transaction</Trans></span>
+    </Typography>}>
       {result_message && (
         <Grid item xs={12}>
           <p className={result_class}>{result_message}</p>

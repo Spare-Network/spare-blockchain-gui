@@ -1,10 +1,12 @@
 import { Trans } from '@lingui/macro';
+import { Typography } from '@material-ui/core';
 import {
   KeyboardArrowDown as KeyboardArrowDownIcon,
   KeyboardArrowUp as KeyboardArrowUpIcon,
 } from '@material-ui/icons';
 import React, { ReactNode } from 'react';
 import { useToggle } from 'react-use';
+import styled from 'styled-components';
 import Accordion from '../Accordion';
 import Flex from '../Flex';
 
@@ -15,6 +17,12 @@ type Props = {
   moreTitle?: ReactNode;
   lessTitle?: ReactNode;
 };
+
+const StyledToggleAdvancedOptions = styled(({ expanded, ...rest }) => (
+  <Typography {...rest} />
+))`
+  cursor: pointer;
+`;
 
 export default function AdvancedOptions(props: Props) {
   const {

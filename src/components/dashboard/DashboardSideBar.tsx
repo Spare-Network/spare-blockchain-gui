@@ -2,7 +2,7 @@ import { Trans } from '@lingui/macro';
 import { List } from '@material-ui/core';
 import { Flex, SideBarItem } from '@spare/core';
 import {
-    Farm as FarmIcon, Home as HomeIcon, Keys as KeysIcon, Plot as PlotIcon, Wallet as WalletIcon
+    Farm as FarmIcon, Home as HomeIcon, Keys as KeysIcon, Plot as PlotIcon, Wallet as WalletIcon, Pool as PoolIcon
 } from '@spare/icons';
 import React from 'react';
 import { useDispatch } from 'react-redux';

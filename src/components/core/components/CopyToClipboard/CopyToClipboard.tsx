@@ -1,10 +1,9 @@
 import { Trans } from '@lingui/macro';
 import { useCopyToClipboard } from 'react-use';
-import { Tooltip, IconButton } from '@material-ui/core';
+import { Tooltip } from '@material-ui/core';
 import { Assignment as AssignmentIcon } from '@material-ui/icons';
 import { IconButton } from '@spare/core';
 import React, { useState } from 'react';
-import { useCopyToClipboard } from 'react-use';
 // @ts-ignore
 import { useTimeout } from 'react-use-timeout';
 
